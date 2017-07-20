@@ -33,12 +33,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_211C9B511BE428AD917089FA48624F7A"
-        "OwnerKey" = "8:_DF32A589E10B42F9A64A1DB74BED60E4"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_2C9BC2DB61AB91DBA2700A4FE6244DAA"
         "OwnerKey" = "8:_DF32A589E10B42F9A64A1DB74BED60E4"
         "MsmSig" = "8:_UNDEFINED"
@@ -112,13 +106,13 @@
         "Entry"
         {
         "MsmKey" = "8:_9A1EBC19B28134D981315F5FE97B8DAD"
-        "OwnerKey" = "8:_AB5A781C3D63731E339143726DFBD7B4"
+        "OwnerKey" = "8:_FCFBEA35B6DF6D7F95B74977D18AAD82"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_9A1EBC19B28134D981315F5FE97B8DAD"
-        "OwnerKey" = "8:_FCFBEA35B6DF6D7F95B74977D18AAD82"
+        "OwnerKey" = "8:_AB5A781C3D63731E339143726DFBD7B4"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -177,6 +171,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_C8E2CC0B32D6C308C3290B44B4AA8DEF"
+        "OwnerKey" = "8:_DF32A589E10B42F9A64A1DB74BED60E4"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_D374BEE557F66E058D0C867603CA5F2D"
         "OwnerKey" = "8:_DF32A589E10B42F9A64A1DB74BED60E4"
         "MsmSig" = "8:_UNDEFINED"
@@ -220,7 +220,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_FB0AF9B3481AFF5591632885221216DB"
+        "OwnerKey" = "8:_2C9BC2DB61AB91DBA2700A4FE6244DAA"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -280,7 +280,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_211C9B511BE428AD917089FA48624F7A"
+        "OwnerKey" = "8:_C8E2CC0B32D6C308C3290B44B4AA8DEF"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -322,12 +322,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_2C9BC2DB61AB91DBA2700A4FE6244DAA"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_09E514E2AEA659ACA53CFE3A6CEF67F8"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -335,6 +329,12 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_AB5A781C3D63731E339143726DFBD7B4"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_FB0AF9B3481AFF5591632885221216DB"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -509,37 +509,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_211C9B511BE428AD917089FA48624F7A"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:PictureBox, Version=1.0.6400.29185, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_211C9B511BE428AD917089FA48624F7A"
-                    {
-                    "Name" = "8:PictureBox.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:PictureBox.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_8A1AF2A522374A6182F3A20833722F6D"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_2C9BC2DB61AB91DBA2700A4FE6244DAA"
             {
             "AssemblyRegister" = "3:1"
@@ -595,7 +564,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:CollapsiblePanel, Version=1.0.3328.21107, Culture=neutral"
+            "AssemblyAsmDisplayName" = "8:CollapsiblePanel, Version=1.0.6409.31607, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_42B61B9FB51846897D1DE90D69EA0C8C"
@@ -657,7 +626,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Authentication, Version=1.0.6400.29186, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:Authentication, Version=1.0.6410.21685, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_75ECD3F8F3B471CA1B9495317A88387D"
@@ -739,7 +708,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GPU, Version=1.0.6400.29185, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:GPU, Version=1.0.6410.21685, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_91A65F6EFA958407B4514DEDA78AEA04"
@@ -961,6 +930,37 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_C8E2CC0B32D6C308C3290B44B4AA8DEF"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:PictureBox, Version=1.0.6410.21685, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_C8E2CC0B32D6C308C3290B44B4AA8DEF"
+                    {
+                    "Name" = "8:PictureBox.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:PictureBox.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_8A1AF2A522374A6182F3A20833722F6D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_D374BEE557F66E058D0C867603CA5F2D"
             {
             "AssemblyRegister" = "3:1"
@@ -996,7 +996,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ErrorHandling, Version=1.0.6400.29186, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:ErrorHandling, Version=1.0.6410.21685, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_E8FD80547D036EB2FCC02E8F6EABD638"
@@ -1195,7 +1195,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Módulo de Publicação de Objectos Digitais"
         "ProductCode" = "8:{602B5283-CBFA-4E18-A3BA-19A81DE3BC5E}"
-        "PackageCode" = "8:{9AF08995-27F7-476C-A1D1-F5EB4ACFDEEF}"
+        "PackageCode" = "8:{56A52834-4467-48E7-9FA7-1E36699057D8}"
         "UpgradeCode" = "8:{A32D02A0-7B45-4476-8812-3D58EE9761E1}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -1480,7 +1480,7 @@
                             "ContextData" = "8:"
                             "Attributes" = "3:0"
                             "Setting" = "3:2"
-                            "Value" = "8:Direcção-Geral de Arquivos"
+                            "Value" = "8:Município de Ourém"
                             "DefaultValue" = "8:"
                             "UsePlugInResources" = "11:TRUE"
                             }
@@ -1532,7 +1532,7 @@
                             "ContextData" = "8:"
                             "Attributes" = "3:0"
                             "Setting" = "3:2"
-                            "Value" = "8:DGARQ"
+                            "Value" = "8:CMO"
                             "DefaultValue" = "8:"
                             "UsePlugInResources" = "11:TRUE"
                             }
@@ -1584,7 +1584,7 @@
                             "ContextData" = "8:"
                             "Attributes" = "3:0"
                             "Setting" = "3:2"
-                            "Value" = "8:admin@dgarq.gov.pt"
+                            "Value" = "8:informatica@mail.cm-ourem.pt"
                             "DefaultValue" = "8:"
                             "UsePlugInResources" = "11:TRUE"
                             }
@@ -1636,7 +1636,7 @@
                             "ContextData" = "8:"
                             "Attributes" = "3:0"
                             "Setting" = "3:2"
-                            "Value" = "8:mail.iannt.pt"
+                            "Value" = "8:mail.cm-ourem.pt"
                             "DefaultValue" = "8:"
                             "UsePlugInResources" = "11:TRUE"
                             }
@@ -2339,7 +2339,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_DF32A589E10B42F9A64A1DB74BED60E4"
             {
-            "SourcePath" = "8:Source\\obj\\Debug\\MPOD.exe"
+            "SourcePath" = "8:Source\\obj\\Release\\MPOD.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_8A1AF2A522374A6182F3A20833722F6D"
