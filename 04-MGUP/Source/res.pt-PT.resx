@@ -1,0 +1,939 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<!--============================================================================-->
+	<!--====== GLOBAL ==============================================================-->
+	<!--============================================================================-->
+	<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+	<!--====== INSTITUTION =========================================================-->
+	<data name="Institution.Code">
+		<value>ADP</value>
+	</data>
+	<data name="Institution.Name">
+		<value>Arquivo Distrital do Porto</value>
+	</data>
+	<data name="Institution.Address">
+		<value>Rua das Taipas, n.º 90, 4050-598 Porto</value>
+	</data>
+	<data name="Institution.URL">
+		<value>http://www.adporto.pt</value>
+	</data>
+	<!--====== APLICATION ========================================================-->
+	<data name="Aplication.Code">
+		<value>GPU</value>
+	</data>
+	<data name="Aplication.Name">
+		<value>Módulo de Administração</value>
+	</data>
+	<data name="Aplication.Designation">
+		<value>.:: Módulo de Administração ::.</value>
+	</data>	
+	<!--====== LABELS ===========================================================-->
+	<data name="lblTitleMenuLeftB.Title">
+		<value>Menu</value>
+	</data>
+	<data name="lblTitleBodyB.Authentication">
+		<value>Autenticação</value>
+	</data>
+	<data name="lblTitleBodyB.gpu-0">
+		<value>Erro</value>
+	</data>
+	<data name="lblTitleBodyB.gpu-1.1">
+		<value>Gestão de funcionários</value>
+	</data>
+	<data name="lblTitleBodyB.gpu-1.2">
+		<value>Gestão de perfis</value>
+	</data>
+	<data name="lblTitleBodyB.gpu-2.1">
+		<value>Gestão de aplicações</value>
+	</data>
+	<data name="lblTitleBodyB.gpu-4.1">
+		<value>Dados globais imediatos</value>
+	</data>
+	<data name="lblTitleBodyB.gpu-4.2">
+		<value>Dados de produçao global do arquivo</value>
+	</data>
+	<data name="lblTitleBodyB.initial">
+		<value>Página inicial</value>
+	</data>	
+	<!-- === login.ascx ============================================================ -->
+	<data name="login.lblUserName">
+		<value>Utilizador</value>
+	</data>
+	<data name="login.lblPassword">
+		<value>Senha</value>
+	</data>
+	<data name="login.bttnSubmit">
+		<value>Entrar</value>
+	</data>
+	<data name="login.errorUsernamePass">
+		<value>Código ou senha incorrecta!</value>
+	</data>
+	<data name="login.errorNotActive">
+		<value>Funcionário inactivo!</value>
+	</data>
+	<data name="login.errorNotProfile">
+		<value>Ainda não tem um perfil associado pela administração!</value>
+	</data>
+	<data name="login.errorAplicationAccessDenied">
+		<value>Accesso negado a esta aplicação!</value>
+	</data>
+	<!-- === header.ascx =========================================================== -->
+	<data name="header.lblMsgUser">
+		<value>Utilizador autenticado:</value>
+	</data>
+	<data name="header.lblChangeUser">
+		<value>Alterar utilizador</value>
+	</data>
+	<data name="header.lblExit">
+		<value>Sair</value>
+	</data>
+		
+	<!--============================================================================-->
+	<!--====== ADMINISTRATION ======================================================-->
+	<!--============================================================================-->
+	<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+	
+	<!--============================================================================-->
+	<!--====== EMPLOYEES ===========================================================-->
+	<!--============================================================================-->
+	<!-- === employeesMenu1.ascx ================================================== -->
+	<data name="employeesMenu1.dgProfiles.column2HeaderText">
+		<value>Cód. funcionário</value>
+	</data>
+	<data name="employeesMenu1.dgProfiles.column3HeaderText">
+		<value>Nome funcionário</value>
+	</data>
+	<data name="employeesMenu1.dgProfiles.column4HeaderText">
+		<value>Perfil</value>
+	</data>
+	<data name="employeesMenu1.dgProfiles.column5HeaderText">
+		<value>Activo</value>
+	</data>
+	<data name="employeesMenu1.ddlListType0">
+		<value>Funcionários activos</value>
+	</data>
+	<data name="employeesMenu1.ddlListType1">
+		<value>Funcionários inactivos</value>
+	</data>
+	<data name="employeesMenu1.ddlListType2">
+		<value>Todos</value>
+	</data>
+	<!-- === employeesMenu2.ascx ================================================== -->
+	<data name="employeesMenu2.lblPersonalDatas">
+		<value>Dados pessoais</value>
+	</data>
+	<data name="employeesMenu2.lblFirstName">
+		<value>Primeiro nome</value>
+	</data>
+	<data name="employeesMenu2.lblLastName">
+		<value>Último nome</value>
+	</data>
+	<data name="employeesMenu2.lblObs">
+		<value>Observações</value>
+	</data>
+	<data name="employeesMenu2.lblAccessKey">
+		<value>Informação de acesso</value>
+	</data>
+	<data name="employeesMenu2.lblUserName">
+		<value>Código utilizador</value>
+	</data>
+	<data name="employeesMenu2.lblPassword">
+		<value>Senha</value>
+	</data>
+	<data name="employeesMenu2.lblPassword1">
+		<value>Confirmação da senha</value>
+	</data>
+	<data name="employeesMenu2.lnkbDelete">
+		<value>Repor</value>
+	</data>
+	<data name="employeesMenu2.lnkbSubmit">
+		<value>Submeter</value>
+	</data>
+	<data name="employeesMenu2.lblAplications">
+		<value>Aplicações</value>
+	</data>
+	<data name="employeesMenu2.rfvTxtFirstName.ErrorMessage">
+		<value>Campo 'Primeiro nome' vazio</value>
+	</data>
+	<data name="employeesMenu2.rfvTxtLastName.ErrorMessage">
+		<value>Campo 'Último nome' vazio</value>
+	</data>
+	<data name="employeesMenu2.rfvTxtPassword.ErrorMessage">
+		<value>Campo 'Password' vazio</value>
+	</data>
+	<data name="employeesMenu2.rfvTxtPassword1.ErrorMessage">
+		<value>Campo 'Confirmação password' vazio</value>
+	</data>
+	<data name="employeesMenu2.cvPassword.ErrorMessage">
+		<value>'Confirmação de senha' incorrecta</value>
+	</data>
+	<data name="employeesMenu2.cvAplications.ErrorMessage">
+		<value>Nenhuma 'Aplicação' seleccionada</value>
+	</data>
+	
+	<!--============================================================================-->
+	<!--====== PROFILES ============================================================-->
+	<!--============================================================================-->
+	<!-- === profilesMenu1.ascx =================================================== -->
+	<data name="profilesMenu1.lnkbSave">
+		<value>Guardar</value>
+	</data>
+	<data name="profilesMenu1.lblAplications">
+		<value>Aplicações:</value>
+	</data>
+	<data name="profilesMenu1.lblProfiles">
+		<value>Perfis:</value>
+	</data>
+	<data name="profilesMenu1.lblFunctions">
+		<value>Funcionalidades:</value>
+	</data>
+	<!-- === profilesMenu2.ascx ================================================== -->
+	<data name="profilesMenu2.dgProfiles.column2HeaderText">
+		<value>Perfil</value>
+	</data>
+	<data name="profilesMenu2.lnkbSave">
+		<value>Guardar</value>
+	</data>
+	<data name="profilesMenu2.lblAplications">
+		<value>Aplicações:</value>
+	</data>
+	<data name="profilesMenu2.lblProfiles">
+		<value>Perfis</value>
+	</data>
+	<data name="profilesMenu2.lblNewProfile">
+		<value>Novo Perfil:</value>
+	</data>
+		
+	<!--============================================================================-->
+	<!--====== SYSTEM ADMINISTRATION ===============================================-->
+	<!--============================================================================-->
+	<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+	
+	<!--============================================================================-->
+	<!--====== APLICATIONS =========================================================-->
+	<!--============================================================================-->
+	<!-- === aplicationsMenu1.ascx ================================================ -->
+	<data name="aplicationsMenu1.confirm1">
+		<value>Deseja excluir este nodo?</value>
+	</data>
+	<data name="aplicationsMenu1.confirm2">
+		<value>Deseja excluir este nodo e todos os seus filhos?</value>
+	</data>
+	<!-- === aplicationsMenu2.ascx ================================================ -->
+	<data name="aplicationsMenu2.dgAplications.column2HeaderText">
+		<value>Código</value>
+	</data>
+	<data name="aplicationsMenu2.dgAplications.column3HeaderText">
+		<value>Nome</value>
+	</data>
+	<data name="aplicationsMenu2.dgAplications.column4HeaderText">
+		<value>Versão</value>
+	</data>
+	<data name="aplicationsMenu2.lblNewAplication">
+		<value>Nome aplicação</value>
+	</data>
+	<data name="aplicationsMenu2.lblNewVersion">
+		<value>Versão</value>
+	</data>
+	<data name="aplicationsMenu2.lblNewAplicationCode">
+		<value>Código</value>
+	</data>
+	<data name="aplicationsMenu2.lblAplications">
+		<value>Aplicações</value>
+	</data>
+	
+	<!--============================================================================-->
+	<!--====== DIGITARQ STATISTICS =================================================-->
+	<!--============================================================================-->
+	<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+	
+	<!--============================================================================-->
+	<!--====== DATA BASE ===========================================================-->
+	<!--============================================================================-->
+	<data name="statsIBD.lblArquive">
+		<value>Grupo de arquivos</value>
+	</data>
+	<data name="statsIBD.lblNumArquive">
+		<value>Nº de fundos</value>
+	</data>
+	<data name="statsIBD.lblPercArquive">
+		<value>%</value>
+	</data>
+	<data name="statsIBD.lblNumFund">
+		<value>Número de fundos</value>
+	</data>
+	<data name="statsIBD.lblPercFund">
+		<value>% de fundos</value>
+	</data>
+	<data name="statsIBD.lblDescF">
+		<value>Fundo e subníveis</value>
+	</data>
+	<data name="statsIBD.lblDescSC">
+		<value>Secção e subníveis</value>
+	</data>
+	<data name="statsIBD.lblDescSR">
+		<value>Série e subníveis</value>
+	</data>
+	<data name="statsIBD.lblDescUI">
+		<value>Unidade de instalação</value>
+	</data>
+	<data name="statsIBD.lblDescD">
+		<value>Documento e doc. composto</value>
+	</data>
+	<data name="statsIBD.lblNumFundRev">
+		<value>Fundos revistos</value>
+	</data>
+	<data name="statsIBD.lblNumFundNRev">
+		<value>Fundos não revistos</value>
+	</data>
+	<data name="statsIBD.lblNumTotFund">
+		<value>Total de fundos</value>
+	</data>
+	<data name="statsIBD.lblNumFundVis">
+		<value>Fundos visíveis</value>
+	</data>
+	<data name="statsIBD.lblNumFundNVis">
+		<value>Fundos não visíveis</value>
+	</data>
+	<data name="statsIBD.lblNumRegRefC">
+		<value>Referências completas</value>
+	</data>
+	<data name="statsIBD.lblNumRegRefI">
+		<value>Referências incompletas</value>
+	</data>
+	<data name="statsIBD.lblNumTotReg">
+		<value>Total de registos</value>
+	</data>
+	<data name="statsIBD.lblNumRegRev">
+		<value>Registos revistos</value>
+	</data>
+	<data name="statsIBD.lblNumRegNRev">
+		<value>Registos não revistos</value>
+	</data>
+	<data name="statsIBD.lblNumRegVis">
+		<value>Registos visíveis</value>
+	</data>
+	<data name="statsIBD.lblNumRegNVis">
+		<value>Registos não visíveis</value>
+	</data>
+	<!--============================================================================-->
+	<!--====== PRODUCTION ==========================================================-->
+	<!--============================================================================-->
+	<data name="statsPGFunc.lblNivDesc">
+		<value>Nível de descrição</value>
+	</data>
+	<data name="statsPGFunc.lblCr">
+		<value>Criação</value>
+	</data>
+	<data name="statsPGFunc.lblAlL">
+		<value>Alteração (até 2)</value>
+	</data>
+	<data name="statsPGFunc.lblEl">
+		<value>Eliminação</value>
+	</data>
+	<data name="statsPGFunc.lblF">
+		<value>Fundo</value>
+	</data>
+	<data name="statsPGFunc.lblSF">
+		<value>SubFundo</value>
+	</data>
+	<data name="statsPGFunc.lblSC">
+		<value>Secção</value>
+	</data>
+	<data name="statsPGFunc.lblSSC">
+		<value>SubSecção</value>
+	</data>
+	<data name="statsPGFunc.lblSSSC">
+		<value>SubSubSecção</value>
+	</data>
+	<data name="statsPGFunc.lblSR">
+		<value>Série</value>
+	</data>
+	<data name="statsPGFunc.lblSSR">
+		<value>SubSérie</value>
+	</data>
+	<data name="statsPGFunc.lblUI">
+		<value>Unidade de instalação</value>
+	</data>
+	<data name="statsPGFunc.lblD">
+		<value>Documento</value>
+	</data>
+	<data name="statsPGFunc.lblDC">
+		<value>Documento Composto</value>
+	</data>
+	<data name="statsPGFunc.rblTotDay">
+		<value>Total diário</value>
+	</data>
+	<data name="statsPGFunc.rblTotMon">
+		<value>Total mensal</value>
+	</data>
+	<data name="statsPGFunc.rblTotYear">
+		<value>Total anual</value>
+	</data>
+	<data name="statsPGFunc.lblTotOp">
+		<value>Total de operações</value>
+	</data>
+	<data name="button.Execute">
+		<value>Executa</value>
+	</data>
+	<data name="statsPGFunc.lblOp">
+		<value>Opções:</value>
+	</data>
+	<data name="statsPGFunc.lblEmployees">
+		<value>Funcionários:</value>
+	</data>
+	<data name="statsPGFunc.lblDate">
+		<value>Data: </value>
+	</data>
+	<data name="statsPGFunc.ddlJan">
+		<value>Janeiro</value>
+	</data>
+	<data name="statsPGFunc.ddlFev">
+		<value>Fevereiro</value>
+	</data>
+	<data name="statsPGFunc.ddlMar">
+		<value>Março</value>
+	</data>
+	<data name="statsPGFunc.ddlApr">
+		<value>Abril</value>
+	</data>
+	<data name="statsPGFunc.ddlMay">
+		<value>Maio</value>
+	</data>
+	<data name="statsPGFunc.ddlJun">
+		<value>Junho</value>
+	</data>
+	<data name="statsPGFunc.ddlJul">
+		<value>Julho</value>
+	</data>
+	<data name="statsPGFunc.ddlAug">
+		<value>Agosto</value>
+	</data>
+	<data name="statsPGFunc.ddlSep">
+		<value>Setembro</value>
+	</data>
+	<data name="statsPGFunc.ddlOct">
+		<value>Outubro</value>
+	</data>
+	<data name="statsPGFunc.ddlNov">
+		<value>Novembro</value>
+	</data>
+	<data name="statsPGFunc.ddlDec">
+		<value>Dezembro</value>
+	</data>
+	<data name="statsPGFunc.lblDay">
+		<value> Dia: </value>
+	</data>
+	<data name="statsPGFunc.lblMon">
+		<value> Mês: </value>
+	</data>
+	<data name="statsPGFunc.lblYea">
+		<value> Ano: </value>
+	</data>
+	<data name="statsPGFunc.lblEmployee">
+		<value>Funcionário: </value>
+	</data>
+	<data name="statsPGFunc.TypeOp">
+		<value>Operação: </value>
+	</data>
+	<data name="statsPGFunc.lblAvOp">
+		<value>Média de operações</value>
+	</data>
+	<data name="statsPGFunc.rblAvDayM">
+		<value>Média diária num mês</value>
+	</data>
+	<data name="statsPGFunc.rblAvDayY">
+		<value>Média diária num ano</value>
+	</data>
+	<data name="statsPGFunc.rblAvMonY">
+		<value>Média mensal num ano</value>
+	</data>
+	<data name="statsPGArq.lblFunc">
+		<value>Funcionários</value>
+	</data>
+	<data name="statsPGArq.rblPercFunc">
+		<value>% de operações de cada funcionário (face aos restantes)</value>
+	</data>
+	<data name="statsIBD.rblArqGrup">
+		<value>Grupos de Arquivos</value>
+	</data>
+	<data name="statsIBD.rblFund">
+		<value>Fundos</value>
+	</data>
+	<data name="statsIBD.rblReg">
+		<value>Registos</value>
+	</data>
+	<data name="statsIBD.lblTypeOp">
+		<value>Tipo de operação: </value>
+	</data>
+	<data name="statsIBD.lblFundRev">
+		<value>Fundos revistos</value>
+	</data>
+	<data name="statsIBD.lblFundVis">
+		<value>Fundos visíveis</value>
+	</data>
+	<data name="statsIBD.lblRegRev">
+		<value>Registos revistos</value>
+	</data>
+	<data name="statsIBD.lblRegVis">
+		<value>Registos visíveis</value>
+	</data>
+	<data name="statsIBD.Warning">
+		<value>WARNING : Existem registos que não fundo, sem fundo ou registo pai</value>
+	</data>
+	<data name="lblTitleBodyB.gpu-3.2">
+		<value>Indicadores de Produção Global</value>
+	</data>
+	<data name="lblTitleBodyB.gpu-3.1">
+		<value>Indicadores da Base de Dados</value>
+	</data>
+	<data name="statsIBDGerRel.lblNivDesc">
+		<value>Níveis de descrição:</value>
+	</data>
+	<data name="statsIBDGerRel.rblSC">
+		<value>Secção e subníveis</value>
+	</data>
+	<data name="statsIBDGerRel.rblSR">
+		<value>Série e subníveis</value>
+	</data>
+	<data name="statsIBDGerRel.rblUI">
+		<value>Unidade de Instalação</value>
+	</data>
+	<data name="statsIBDGerRel.rblD">
+		<value>Documento e Documento Composto</value>
+	</data>
+	<data name="statsIBDGerRel.rblF">
+		<value>Fundo e subníveis</value>
+	</data>
+	<data name="statsIBDGerRel.lblTypeOp">
+		<value>Fundos com descrição até nível </value>
+	</data>
+	<data name="statsIBDGerRel.lblUID">
+		<value>Código</value>
+	</data>
+	<data name="statsIBDGerRel.lblUIT">
+		<value>Designação</value>
+	</data>
+	<data name="lblTitleBodyB.gpu-3.3">
+		<value>Indicadores de Sistema</value>
+	</data>
+	<data name="statsIBD.lblExtentMlArquive">
+		<value>Extensão (em m/l)</value>
+	</data>
+	<data name="statsButton.lblExport">
+		<value>Exportar</value>
+	</data>
+	<data name="statsIBD.lblNivTreat">
+		<value>Níveis de tratamento dos fundos</value>
+	</data>
+	<data name="statsIBD.lblRefReg">
+		<value>Referências dos registos</value>
+	</data>
+	<data name="statsPGFunc.lblEmployeeNotChosen">
+		<value>Funcionário não foi escolhido</value>
+	</data>
+	<data name="statsPGArq.lblChPercCr">
+		<value>% criações por funcionário</value>
+	</data>
+	<data name="statsPGArq.lblChPercAl">
+		<value>% alterações por funcionário</value>
+	</data>
+	<data name="statsPGArq.lblChPercEl">
+		<value>% eliminações por funcionário</value>
+	</data>
+	<data name="statsPGFunc.rblTotMontYearNiv">
+		<value>Totais mensais de um ano (níveis)</value>
+	</data>
+	<data name="statsPGFunc.ddlSelect">
+		<value>Seleccionar</value>
+	</data>
+	<data name="statsIBDGerRel.lblCode">
+		<value>Código</value>
+	</data>
+	<data name="statsIBDGerRel.lblDesignation">
+		<value>Designação</value>
+	</data>
+	<data name="stats.lblExecutionTime">
+		<value>Data de execução: </value>
+	</data>
+	<data name="statsIBDsub.lblTotal">
+		<value>Total</value>
+	</data>
+	<data name="statsIBDGerRel.lblF">
+		<value>fundo</value>
+	</data>
+	<data name="statsIBDGerRel.lblSC">
+		<value>secção</value>
+	</data>
+	<data name="statsIBDGerRel.lblSR">
+		<value>série</value>
+	</data>
+	<data name="statsIBDGerRel.lblUI">
+		<value>unidade de instalação</value>
+	</data>
+	<data name="statsIBDGerRel.lblDDC">
+		<value>documento e/ou documento composto</value>
+	</data>
+	<data name="statsIBDGerRel.lblFde">
+		<value> fundo(s) de </value>
+	</data>
+	<data name="statsPGFunc.rblTotMontYear">
+		<value>Totais mensais de um ano</value>
+	</data>
+	<data name="statsPGFunc.lblMon2">
+		<value>Mês</value>
+	</data>
+	<data name="statsPGFunc.lblAlM">
+		<value>Alteração (3 ou +)</value>
+	</data>
+	<data name="statsPGFunc.lblAl">
+		<value>Alteração</value>
+	</data>
+	<data name="statsPGFunc.rblAveraPer">
+		<value>Média (intervalo)</value>
+	</data>
+	<data name="statsPGFunc.rblTotalPer">
+		<value>Total (intervalo)</value>
+	</data>
+	<data name="statsPGFunc.lblTo">
+		<value>Até:</value>
+	</data>
+	<data name="statsPGFunc.lblFrom">
+		<value>De:</value>
+	</data>
+	<!--============================================================================-->
+	<!--====== SYSTEM ==============================================================-->
+	<!--============================================================================-->
+	<!-- === systemResources.ascx ==================================================-->
+	<data name="systemResources.op1">
+		<value>Nº de logs da base dados</value>
+	</data>
+	<data name="systemResources.op2">
+		<value>Backups da base dados</value>
+	</data>
+	<data name="systemResources.op3">
+		<value>Tamanho da base dados</value>
+	</data>
+	<data name="systemResources.op4">
+		<value>Espaço disponível em disco</value>
+	</data>
+	<data name="systemResources.deviceID">
+		<value>Drive {0}</value>
+	</data>
+	<data name="systemResources.percentLogsByYear">
+		<value>% de logs por ano</value>
+	</data>
+	<data name="systemResources.percentLogsByUser">
+		<value>% de logs por funcionário</value>
+	</data>
+	<data name="systemResources.dbSize">
+		<value>Tamanho da base dados</value>
+	</data>
+	<data name="systemResources.lblTotal">
+		<value>Total:</value>
+	</data>
+	<data name="systemResources.lblDBLocation">
+		<value>Localização da Base de Dados:</value>
+	</data>
+	<data name="systemResources.dgCountLogsByYear.column0HeaderText">
+		<value>Ano</value>
+	</data>
+	<data name="systemResources.dgCountLogsByYear.column1HeaderText">
+		<value>Nº de logs</value>
+	</data>
+	<data name="systemResources.dgCountLogsByUsername.column0HeaderText">
+		<value>Funcionário</value>
+	</data>
+	<data name="systemResources.dgCountLogsByUsername.column1HeaderText">
+		<value>Nº de logs</value>
+	</data>
+	<data name="systemResources.dgBackups.column0HeaderText">
+		<value>Ficheiro</value>
+	</data>
+	<data name="systemResources.dgBackups.column1HeaderText">
+		<value>Tamanho (MB)</value>
+	</data>
+	<data name="systemResources.dgBackups.column2HeaderText">
+		<value>Data</value>
+	</data>
+	<data name="systemResources.dgDBSize.column0HeaderText">
+		<value>Drive</value>
+	</data>
+	<data name="systemResources.dgDBSize.column1HeaderText">
+		<value>Espaço (MB)</value>
+	</data>
+	<data name="systemResources.dgDBSize.column2HeaderText">
+		<value>Espaço (%)</value>
+	</data>
+	<data name="systemResources.dgDiskSize.column0HeaderText">
+		<value>Drive</value>
+	</data>
+	<data name="systemResources.dgDiskSize.column1HeaderText">
+		<value>Tamanho (MB)</value>
+	</data>
+	<data name="systemResources.dgDiskSize.column2HeaderText">
+		<value>Espaço ocupado (MB)</value>
+	</data>
+	<data name="systemResources.dgDiskSize.column3HeaderText">
+		<value>%</value>
+	</data>
+	<data name="systemResources.dgDiskSize.column4HeaderText">
+		<value>Espaço livre (MB)</value>
+	</data>
+	<data name="systemResources.dgDiskSize.column5HeaderText">
+		<value>%</value>
+	</data>	
+	<!--============================================================================-->
+	<!--====== GOD STATISTICS ======================================================-->
+	<!--============================================================================-->
+	<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+	
+	<!-- === statsGPGOD.ascx =======================================================-->
+	<data name="statsGPGOD.lblTotalProjects">
+		<value>Nº total de projectos:</value>
+	</data>	
+	<data name="statsGPGOD.lblTotalDigitalObjects">
+		<value>Nº total de OD existentes:</value>
+	</data>	
+	<data name="statsGPGOD.lblTotalImages">
+		<value>Nº total de imagens:</value>
+	</data>	
+	<data name="statsGPGOD.lblTotalLineImages">
+		<value>Nº total de imagens em linha:</value>
+	</data>	
+	<data name="statsGPGOD.dgImages.column0HeaderText">
+		<value>Nível de descrição</value>
+	</data>	
+	<data name="statsGPGOD.dgImages.column1HeaderText">
+		<value>Total de imagens</value>
+	</data>	
+	<!-- === statsGPGOD.ascx =======================================================-->
+	<data name="statsArchiveGPGOD.rblChoice.item1">
+		<value>Produção do arquivo</value>
+	</data>	
+	<data name="statsArchiveGPGOD.rblChoice.item2">
+		<value>Produção dos funcionários</value>
+	</data>
+	<data name="statsArchiveGPGOD.dgArchive.column0HeaderText">
+		<value>Mês</value>
+	</data>	
+	<data name="statsArchiveGPGOD.dgArchive.column1HeaderText">
+		<value>Total mensal</value>
+	</data>	
+	<data name="statsArchiveGPGOD.dgArchive.column2HeaderText">
+		<value>Média diária/mês</value>
+	</data>	
+	<data name="statsArchiveGPGOD.dgEmployees.column0HeaderText">
+		<value>Funcionário</value>
+	</data>	
+	<data name="statsArchiveGPGOD.dgEmployees.column1HeaderText">
+		<value>Total de imagens</value>
+	</data>	
+	<data name="statsArchiveGPGOD.dgEmployees.column2HeaderText">
+		<value>% face aos restantes</value>
+	</data>	
+	<data name="statsArchiveGPGOD.dgEmployees.column3HeaderText">
+		<value>Média mensal</value>
+	</data>	
+	<data name="statsArchiveGPGOD.dgEmployees.column4HeaderText">
+		<value>Média diária</value>
+	</data>
+	<data name="statsArchiveGPGOD.chartArchiveProduction.title">
+		<value>Produção do arquivo</value>
+	</data>	
+	<data name="statsArchiveGPGOD.chartEmployeesProduction.title">
+		<value>Produção dos funcionários</value>
+	</data>
+	<data name="statsArchiveGPGOD.lblMonthlyAvgArchive">
+		<value>Média mensal/ano:</value>
+	</data>
+	<data name="statsArchiveGPGOD.lblDaylyAvgArchive">
+		<value>Média diária/ano:</value>
+	</data>
+	<data name="statsArchiveGPGOD.lblTotalEmployees">
+		<value>Total:</value>
+	</data>
+	<!--============================================================================-->
+	<!--====== LINKBUTTONS =========================================================-->
+	<!--============================================================================-->
+	<data name="lnkbCancel">
+		<value>Cancelar</value>
+	</data>
+	<data name="lnkbSave">
+		<value>Guardar</value>
+	</data>
+	<data name="lnkbDelete">
+		<value>Apagar</value>
+	</data>
+	<data name="lnkbSubmit">
+		<value>Submeter</value>
+	</data>
+	<data name="lnkbNew">
+		<value>Novo</value>
+	</data>
+	<data name="lnkbUpdate">
+		<value>Alterar</value>
+	</data>
+	<data name="lnkbChange">
+		<value>Alterar</value>
+	</data>
+	<data name="lnkbExit">
+		<value>Sair</value>
+	</data>
+	<data name="lnkbSendError">
+		<value>Enviar erro</value>
+	</data>
+	<data name="lnkbLogin">
+		<value>Entrar</value>
+	</data>
+	<data name="lnkbNext">
+		<value>Seguinte</value>
+	</data>
+	<data name="lnkbBack">
+		<value>Voltar atrás</value>
+	</data>
+	<data name="btnSubmit">
+		<value>Submeter</value>
+	</data>
+	<data name="lnkbDelete">
+		<value>Repor</value>
+	</data>
+	<data name="lnkbNewFunction">
+		<value>Nova operação</value>
+	</data>
+	<data name="lnkbDeleteFunction">
+		<value>Apagar operação</value>
+	</data>
+	<!--============================================================================-->
+	<!--====== POPUP MESSAGES ======================================================-->
+	<!--============================================================================-->
+	<data name="popup.ErrorDB">
+		<value>Ocorreu um erro de inserção na base de dados!</value>
+	</data>
+	<data name="popup.ErrorRepeatUsername">
+		<value>Código de utilizador já existente!</value>
+	</data>
+	<data name="popup.delete">
+		<value>Deseja excluir este item?</value>
+	</data>
+	<data name="popup.cannotDeleteRecord">
+		<value>Não é possível apagar este registo!</value>
+	</data>
+	<data name="popup.cannotInsertRecord">
+		<value>Não é possível inserir este registo! O código já existe.</value>
+	</data>
+	<data name="popup.cannotConnectDB">
+		<value>Não foi possível estabelecer a conexão com a base dados.</value>
+	</data>
+	<!--============================================================================-->
+	<!--====== ALT =================================================================-->
+	<!--============================================================================-->
+	<data name="alt.Delete">
+		<value>Eliminar</value>
+	</data>
+	<data name="alt.Update">
+		<value>Actualizar</value>
+	</data>
+	<data name="alt.Save">
+		<value>Guardar</value>
+	</data>
+	<data name="alt.Cancel">
+		<value>Cancelar</value>
+	</data>
+	<data name="alt.Edit">
+		<value>Editar</value>
+	</data>
+	<data name="alt.Expand">
+		<value>Expandir</value>
+	</data>
+	<data name="alt.Collapse">
+		<value>Colapsar</value>
+	</data>
+	<data name="alt.ExpandAll">
+		<value>Expandir tudo</value>
+	</data>
+	<data name="alt.CollapseAll">
+		<value>Colapsar tudo</value>
+	</data>
+	<data name="alt.Print">
+		<value>Imprimir</value>
+	</data>
+	<data name="alt.PersonalData">
+		<value>Dados pessoais</value>
+	</data>
+	<data name="alt.InstitutionLogo">
+		<value>Arquivo Distrital do Porto</value>
+	</data>
+	<!--============================================================================-->
+	<!--====== ERROR MESSAGES ======================================================-->
+	<!--============================================================================-->
+	<data name="error.lblError">
+		<value>Ocorreu um erro inesperado!</value>
+	</data>
+	<data name="error.ServiceUnavailable">
+		<value>Serviço temporariamente indisponível.</value>
+	</data>
+	<data name="error.SessionExpired">
+		<value>A sua sessão expirou.</value>
+	</data>
+	<data name="error.SessionExpiredOrServiceUnavailable">
+		<value>A sua sessão expirou ou o serviço está temporariamente indisponível.</value>
+	</data>
+	<data name="error.RepReqNotInserted">
+		<value>O seu pedido de pesquisa/reprodução não foi inserido.</value>
+	</data>
+	<data name="error.ResReqNotInserted">
+		<value>O seu pedido de reserva não foi inserido.</value>
+	</data>
+	<data name="error.ConReqNotInserted">
+		<value>O seu pedido de consulta não foi inserido.</value>
+	</data>
+	<data name="error.UserRegisterNotInserted">
+		<value>O seu registo de utilizador não foi inserido.</value>
+	</data>
+	<data name="error.UserRegisterNotUpdated">
+		<value>O seu registo de utilizador não foi alterado.</value>
+	</data>
+	<data name="error.lblAccessDenied">
+		<value>Acesso negado!</value>
+	</data>
+</root>

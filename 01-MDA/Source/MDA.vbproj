@@ -1,0 +1,972 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{00E9823D-B00C-4999-9003-BE58A1D45ED7}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <AssemblyKeyContainerName />
+    <AssemblyName>MDA</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>MDA</RootNamespace>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>MDA.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>MDA.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <COMReference Include="AxSHDocVw">
+      <Guid>{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+    </COMReference>
+    <COMReference Include="SHDocVw">
+      <Guid>{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <ProjectReference Include="..\..\06-Authentication\Source\Authentication.vbproj">
+      <Name>Authentication</Name>
+      <Project>{3F213273-2733-4504-8791-6E2E46F009DA}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\08-UserControls\blong\blong.vbproj">
+      <Project>{5dc7b8fc-08c9-4918-b242-fa9171918aea}</Project>
+      <Name>blong</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\08-UserControls\CollapsiblePanel\CollapsiblePanel.vbproj">
+      <Project>{cfac13ba-bd44-4afb-85c4-4660a7e5788a}</Project>
+      <Name>CollapsiblePanel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\08-UserControls\Configuration\Configuration.csproj">
+      <Project>{eb810f76-0269-4da7-bdb5-6caccdd673b9}</Project>
+      <Name>Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\08-UserControls\ErrorHandling\ErrorHandling.vbproj">
+      <Project>{c5ea3b5f-cc8d-414f-a9fe-60ef7788a877}</Project>
+      <Name>ErrorHandling</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\08-UserControls\MaskedBox\MaskedBox.vbproj">
+      <Name>MaskedBox</Name>
+      <Project>{E62BDA7E-2578-424D-AFF3-0857702691F0}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\08-UserControls\mkc_button\mkc_Button.vbproj">
+      <Name>mkc_Button</Name>
+      <Project>{3F8E642F-1B5F-45C2-A359-89EB4CF5A988}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\04-MGUP\Source\MGUP.vbproj">
+      <Name>MGUP</Name>
+      <Project>{0D2BA23C-329A-4295-A2FA-EF819A023A3B}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <Reference Include="ADODB">
+      <Name>adodb</Name>
+      <HintPath>..\..\..\..\Program Files\Microsoft.NET\Primary Interop Assemblies\adodb.dll</HintPath>
+      <AssemblyFolderKey>hklm\primary interop assemblies</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install">
+      <Name>System.Configuration.Install</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Algorithms %28Threaded%29\Erasor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Algorithms %28Threaded%29\Exporter.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Algorithms %28Threaded%29\Importer.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Algorithms %28Threaded%29\Inference.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Algorithms %28Threaded%29\Iterator.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Algorithms %28Threaded%29\NodeCounter.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Algorithms %28Threaded%29\Validator.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Config\ProgramState.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Components\VisualCheckField.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Components\VisualComboBoxImageField.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Components\VisualComponent.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Components\VisualDateField.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Components\VisualLabelField.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Components\VisualTextField.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualField.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldAbstract.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldAccessRestrict.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldAccruals.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldAcqInfo.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldAltFormAvail.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldAppraisal.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldArchivistNotes.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldArrangement.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldAuthor.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldAuthorAddress.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldBibliography.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldBiogHist.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldChronList.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldContainerExtents.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldContainerType.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldControlAccess.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldCustodHist.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldDestination.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldDestinationAddress.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldDimensions.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldExtents.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldFilePlan.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldFooterButtons.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldFullPathUnitId.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldGenreForm.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldGeogName.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldLangMaterial.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldLegalStatus.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldMaterialSpec.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldNotary.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldNote.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldOriginalNumbering.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldOriginalsLoc.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldOtherFindAid.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldOtherLevel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldPhysFacet.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldPhysLoc.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldPhysTech.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldPreferCite.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldProcessInfo.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldRelatedMaterial.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldRepository.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldScopeContent.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldScrivener.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldSeparatedMaterial.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldSeparator.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldUnitDates.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldUnitId.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldUnitTitle.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Fields\Visual Fields\VisualFieldUseRestrict.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Inherited Controls\CheckButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Inherited Controls\ComboBoxImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Inherited Controls\DateTextBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Inherited Controls\LazyTree.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Inherited Controls\ListBoxImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Inherited Controls\TreeViewMutiSelection.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\Inherited Controls\ValidTextBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Collections\AuthorItem.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Collections\ControlAccessItemCollection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Collections\ControlAccessTypeCollection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Collections\FondsListCollection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Collections\UserCollection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Collections\ValidationErrorCollection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Database\Log.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Database\Users.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\EAC\Data Classes\EacArchRelationships.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\EAC\Data Classes\EacIdentity.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\EAC\Data Classes\EacLanguageDeclaration.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\EAC\Data Classes\EacMaintenanceHistory.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\EAC\Data Classes\EacRelationships.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\EAC\Data Classes\EacResourceRelationships.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\EAC\EAC.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\EAD\EADDefinitions.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Genes\Normal\GeneFind.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Genes\Report data collectors\GeneAuthorsList.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Genes\Report data collectors\GeneCatalog.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Genes\Report data collectors\GeneFondsGuide.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Genes\Report data collectors\GeneInstalationUnitsBySeriesList.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Genes\Report data collectors\GeneInstalationUnitsList.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Genes\Report data collectors\GeneInventory.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Genes\Report data collectors\GeneSeriesList.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Genes\Report data collectors\GeneUIInventory.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Genes\Stopable\GeneChangeAvailability.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Genes\Stopable\GeneChangeValidation.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Genes\Stopable\GeneChangeVisiblility.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Genes\Stopable\GeneErasor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Genes\Stopable\GeneInference.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Genes\Stopable\GeneInferenceValidator.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Genes\Stopable\GeneNodeCounter.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Genes\Stopable\GeneNodeCounterPro.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Genes\Stopable\GeneSearch.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Genes\Stopable\GeneSearchReplace.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Genes\Stopable\GeneUpdateCompleteUnitId.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Genes\Stopable\GeneValidator.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Genes\Stopable\StopableGeneFind.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Lazy Node\Data Classes\ArchivistNote.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Lazy Node\Data Classes\Bibliography.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Lazy Node\Data Classes\ChronList.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Lazy Node\Data Classes\ControlAccess.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Lazy Node\Data Classes\DaoGrp.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Lazy Node\Data Classes\ValidationError.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Lazy Node\EADLazyNode.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Lazy Node\LazyNode.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Lazy Node\LazyNodeCollection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Layer\Lazy Node\SQLLazyNode.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DigitarqInstaller.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Error Handling\MessageBoxes.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\AboutForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AuthoritiesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AutoCodingStartNumberForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ControlAccessForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ControlAccessItemEditForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ControlAccessItemsComponentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ControlAccessTypeEditForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FindResultsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FondsManagerForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManualForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NewFondsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProgressDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReportPreviewForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SearchReplaceForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SearchReplaceQuestionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ValidationResultsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modules\Cryptography.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modules\General.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Algorithms\ReportDataSetBuilder.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Reports\Data Sets\CatalogData.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatalogData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Data Sets\ControlAccessData.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlAccessData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Data Sets\CountElements.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CountElements.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Data Sets\FondsGuideData.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FondsGuideData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Data Sets\InventoryData.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InventoryData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Data Sets\ListData.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Data Sets\PhysLocData.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PhysLocData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Layouts\AllControlAccessReport.vb">
+      <DependentUpon>AllControlAccessReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\Layouts\AuthorsListReport.vb">
+      <DependentUpon>AuthorsListReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\Layouts\CatalogReport.vb">
+      <DependentUpon>CatalogReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\Layouts\ClassificationPlanReport.vb">
+      <DependentUpon>ClassificationPlanReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\Layouts\ControlAccessReport.vb">
+      <DependentUpon>ControlAccessReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\Layouts\CountElementsReport.vb">
+      <DependentUpon>CountElementsReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\Layouts\FondsGuideReport.vb">
+      <DependentUpon>FondsGuideReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\Layouts\InventoryReport.vb">
+      <DependentUpon>InventoryReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\Layouts\IUBySeriesReport.vb">
+      <DependentUpon>IUBySeriesReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\Layouts\IUInventoryReport.vb">
+      <DependentUpon>IUInventoryReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\Layouts\IUListReport.vb">
+      <DependentUpon>IUListReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\Layouts\PhysLocReport.vb">
+      <DependentUpon>PhysLocReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\Layouts\SeriesListReport.vb">
+      <DependentUpon>SeriesListReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Content Include="app.ico" />
+    <Content Include="Reports\Data Sets\CatalogData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CatalogData.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Reports\Data Sets\ControlAccessData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControlAccessData.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Reports\Data Sets\CountElements.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CountElements.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Reports\Data Sets\FondsGuideData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FondsGuideData.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Reports\Data Sets\InventoryData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InventoryData.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Reports\Data Sets\ListData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ListData.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Reports\Data Sets\PhysLocData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PhysLocData.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Resources\app.ico" />
+    <Content Include="Resources\banner.JPG" />
+    <Content Include="Resources\logo.png" />
+    <Content Include="Resources\smallLogo.png" />
+    <Content Include="Resources\splash.jpg" />
+    <EmbeddedResource Include="Custom Controls\Fields\Visual Components\VisualCheckField.resx">
+      <DependentUpon>VisualCheckField.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\Fields\Visual Components\VisualDateField.resx">
+      <DependentUpon>VisualDateField.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\Fields\Visual Components\VisualLabelField.resx">
+      <DependentUpon>VisualLabelField.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\Fields\Visual Components\VisualTextField.resx">
+      <DependentUpon>VisualTextField.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\Fields\Visual Fields\VisualField.resx">
+      <DependentUpon>VisualField.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\Fields\Visual Fields\VisualFieldArchivistNotes.resx">
+      <DependentUpon>VisualFieldArchivistNotes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\Inherited Controls\CheckButton.resx">
+      <DependentUpon>CheckButton.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\Inherited Controls\ComboBoxImage.resx">
+      <DependentUpon>ComboBoxImage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\Inherited Controls\DateTextBox.resx">
+      <DependentUpon>DateTextBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\Inherited Controls\LazyTree.resx">
+      <DependentUpon>LazyTree.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\Inherited Controls\ListBoxImage.resx">
+      <DependentUpon>ListBoxImage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\Inherited Controls\TreeViewMutiSelection.resx">
+      <DependentUpon>TreeViewMutiSelection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\Inherited Controls\ValidTextBox.resx">
+      <DependentUpon>ValidTextBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DigitarqInstaller.resx">
+      <DependentUpon>DigitarqInstaller.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AboutForm.resx">
+      <DependentUpon>AboutForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AuthoritiesForm.resx">
+      <DependentUpon>AuthoritiesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AutoCodingStartNumberForm.resx">
+      <DependentUpon>AutoCodingStartNumberForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ControlAccessForm.resx">
+      <DependentUpon>ControlAccessForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ControlAccessItemEditForm.resx">
+      <DependentUpon>ControlAccessItemEditForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ControlAccessItemsComponentForm.resx">
+      <DependentUpon>ControlAccessItemsComponentForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ControlAccessTypeEditForm.resx">
+      <DependentUpon>ControlAccessTypeEditForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FindResultsForm.resx">
+      <DependentUpon>FindResultsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FondsManagerForm.resx">
+      <DependentUpon>FondsManagerForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManualForm.resx">
+      <DependentUpon>ManualForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewFondsForm.resx">
+      <DependentUpon>NewFondsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProgressDialog.resx">
+      <DependentUpon>ProgressDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReportPreviewForm.resx">
+      <DependentUpon>ReportPreviewForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SearchReplaceForm.resx">
+      <DependentUpon>SearchReplaceForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SearchReplaceQuestionForm.resx">
+      <DependentUpon>SearchReplaceQuestionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ValidationResultsForm.resx">
+      <DependentUpon>ValidationResultsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Layouts\AllControlAccessReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AllControlAccessReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Layouts\AuthorsListReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AuthorsListReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Layouts\CatalogReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CatalogReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Layouts\ClassificationPlanReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ClassificationPlanReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Layouts\ControlAccessReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ControlAccessReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Layouts\CountElementsReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CountElementsReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Layouts\FondsGuideReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FondsGuideReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Layouts\InventoryReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>InventoryReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Layouts\IUBySeriesReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>IUBySeriesReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Layouts\IUInventoryReport.resx">
+      <DependentUpon>IUInventoryReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Layouts\IUInventoryReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>IUInventoryReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Layouts\IUListReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>IUListReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Layouts\PhysLocReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PhysLocReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Layouts\SeriesListReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SeriesListReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Reports\Data Sets\CatalogData.xsx">
+      <DependentUpon>CatalogData.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Data Sets\ControlAccessData.xsx">
+      <DependentUpon>ControlAccessData.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Data Sets\CountElements.xsx">
+      <DependentUpon>CountElements.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Data Sets\FondsGuideData.xsx">
+      <DependentUpon>FondsGuideData.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Data Sets\InventoryData.xsx">
+      <DependentUpon>InventoryData.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Data Sets\ListData.xsx">
+      <DependentUpon>ListData.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Data Sets\PhysLocData.xsx">
+      <DependentUpon>PhysLocData.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\license.rtf" />
+    <None Include="Resources\PROFB___.TTF" />
+    <None Include="Resources\PROFW___.TTF" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+    <Service Include="{CF845C55-C321-4742-B673-E6212D061ED9}" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

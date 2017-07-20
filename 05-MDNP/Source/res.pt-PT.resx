@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	
+	<data name="WS.ltlTitle.">
+		<value>Pesquisa</value>
+	</data>
+	<data name="WS.ltlTitle.basicSearch">
+		<value>Pesquisa básica</value>
+	</data>
+	<data name="WS.ltlTitle.advancedSearch">
+		<value>Pesquisa avançada</value>
+	</data>
+	<data name="WS.ltlTitle.help">
+		<value>Ajuda</value>
+	</data>
+	<data name="WS.ltlTitle.listShow">
+		<value>Resultados</value>
+	</data>
+	<data name="WS.ltlTitle.regShow">
+		<value>Descrição detalhada</value>
+	</data>
+	<data name="WS.ltlTitle.authorityRecord">
+		<value>Registo de autoridade</value>
+	</data>
+	
+	<data name="WS.menuLeft.hlnkSearch">
+		<value>Pesquisa</value>
+	</data>
+	<data name="WS.menuLeft.hlnkBasicSearch">
+		<value>Pesquisa básica</value>
+	</data>
+	<data name="WS.menuLeft.hlnkAdvancedSearch">
+		<value>Pesquisa avançada</value>
+	</data>
+	<data name="WS.menuLeft.hlnkRequests">
+		<value>Pedidos</value>
+	</data>
+	<data name="WS.menuLeft.hlnkConsultationRequest">
+		<value>Pedido de Consulta</value>
+	</data>
+	<data name="WS.menuLeft.hlnkReservationRequest">
+		<value>Pedido de Reserva</value>
+	</data>
+	<data name="WS.menuLeft.hlnkReproductionRequest">
+		<value>Pedido de Reprodução</value>
+	</data>
+	<data name="WS.lnkBasicSearch">
+		<value>Pesquisa básica</value>
+	</data>
+	<data name="WS.lnkAdvancedSearch">
+		<value>Pesquisa avançada</value>
+	</data>
+	<data name="WS.lnkHelp">
+		<value>Ajuda</value>
+	</data>
+	<data name="WS.BS.lblHeader">
+		<value>Preencha um ou mais campos:</value>
+	</data>
+	<data name="WS.BS.lblNames">
+		<value>Nomes</value>
+	</data>
+	<data name="WS.BS.lblLocal">
+		<value>Locais</value>
+	</data>
+	<data name="WS.BS.lblOtherTerms">
+		<value>Termos/Palavras</value>
+	</data>
+	<data name="WS.BS.lblDates">
+		<value>Datas</value>
+	</data>
+	<data name="WS.BS.altNames">
+		<value>Pesquisa na informação que identifica pessoas, empresas, instituições e serviços.</value>
+	</data>
+	<data name="WS.BS.altLocal">
+		<value>Pesquisa na informação específica referente a localidades ou endereços.</value>
+	</data>
+	<data name="WS.BS.altOtherTerms">
+		<value>Pesquisa noutros conteúdos da descrição arquivística (biografia, história, funções, etc.), incluindo referências a outras pessoas, instituições e locais.</value>
+	</data>
+	<data name="WS.lblYear">
+		<value>Ano</value>
+	</data>
+	<data name="WS.lblMonth">
+		<value>Mês</value>
+	</data>
+	<data name="WS.lblDay">
+		<value>Dia</value>
+	</data>
+	<data name="WS.lnkbSearch">
+		<value>Pesquisar</value>
+	</data>
+	<data name="WS.hlnkBack">
+		<value>Voltar</value>
+	</data>
+	<data name="WS.BS.emInvalidYearInitial">
+		<value>Atenção, ano inicial inválido.</value>
+	</data>
+	<data name="WS.BS.emInvalidYearFinal">
+		<value>Atenção, ano final inválido.</value>
+	</data>
+	<data name="WS.BS.messageError1">
+		<value>Atenção, intervalo de datas mal introduzido.</value>
+	</data>
+	<data name="WS.BS.messageError2">
+		<value>Dados incompletos ou inexistentes. Verifique os dados que inseriu.</value>
+	</data>
+	<data name="WS.altHelp">
+		<value>Informação de ajuda</value>
+	</data>
+	<data name="WS.AS.emInvalidYearInitial">
+		<value>Atenção, ano inicial inválido.</value>
+	</data>
+	<data name="WS.AS.emInvalidYearFinal">
+		<value>Atenção, ano final inválido.</value>
+	</data>
+	<data name="WS.AS.messageError1">
+		<value>Tem que escolher pelo menos um nível de descrição!</value>
+	</data>
+	<data name="WS.AS.messageError2">
+		<value>Atenção, intervalo de datas mal introduzido.</value>
+	</data>
+	<data name="WS.AS.lblMessageHeader">
+		<value>Encontra-se na pesquisa avançada, recomendada aos utilizadores 
+			que possuem alguma informação sobre o que querem localizar. Preencha o maior 
+			número de campos que se seguem para reduzir o tempo de pesquisa e obter 
+			resultados pertinentes.</value>
+	</data>
+	<data name="WS.AS.lblSelectOtherLevel">
+		<value>Seleccione os níveis de descrição</value>
+	</data>
+	<data name="WS.legendOtherLevel.lblLegend">
+		<value>Legenda</value>
+	</data>
+	<data name="WS.OtherLevel.F">
+		<value>Fundo</value>
+	</data>
+	<data name="WS.OtherLevel.SF">
+		<value>Subfundo</value>
+	</data>
+	<data name="WS.OtherLevel.SC">
+		<value>Secção</value>
+	</data>
+	<data name="WS.OtherLevel.SSC">
+		<value>Subsecção</value>
+	</data>
+	<data name="WS.OtherLevel.SSSC">
+		<value>Subsubsecção</value>
+	</data>
+	<data name="WS.OtherLevel.SR">
+		<value>Série</value>
+	</data>
+	<data name="WS.OtherLevel.SSR">
+		<value>Subsérie</value>
+	</data>
+	<data name="WS.OtherLevel.UI">
+		<value>Unidade de instalação</value>
+	</data>
+	<data name="WS.OtherLevel.DC">
+		<value>Documento composto</value>
+	</data>
+	<data name="WS.OtherLevel.D">
+		<value>Documento simples</value>
+	</data>
+	<data name="WS.OtherLevel.All">
+		<value>Todos</value>
+	</data>
+	<data name="WS.OtherLevel.Alert">
+		<value>informação não tratada arquivisticamente</value>
+	</data>
+	<data name="WS.AS.lblSearchImagesOnly">
+		<value>Pesquisar apenas documentos com imagens</value>
+	</data>
+	<data name="WS.AS.lblCompleteUnitID">
+		<value>Referência</value>
+	</data>
+	<data name="WS.AS.lblPartUnitID">
+		<value>Parte da referência</value>
+	</data>
+	<data name="WS.AS.lblUnitTitle">
+		<value>Título</value>
+	</data>
+	<data name="WS.AS.lblAuthorDestination">
+		<value>Autor/Destinatário</value>
+	</data>
+	<data name="WS.AS.lblGeogLocal">
+		<value>Localidade</value>
+	</data>
+	<data name="WS.AS.lblKeyWord">
+		<value>Outros campos</value>
+	</data>
+	<data name="WS.AS.lblDates">
+		<value>Datas</value>
+	</data>
+	<data name="WS.AS.lblControlAccessTypes">
+		<value>Termos de indexação</value>
+	</data>
+	<data name="WS.AS.lblExactPhrase">
+		<value>Expressão exacta</value>
+	</data>
+	<data name="WS.AS.lblOrPhrase">
+		<value>Qualquer das palavras</value>
+	</data>
+	<data name="WS.AS.lblNotPhrase">
+		<value>Excluindo as palavras</value>
+	</data>
+	<data name="WS.AS.lblWord.To">
+		<value>a</value>
+	</data>
+	<data name="WS.listShow.lblResultsSearch">
+		<value>Resultados da pesquisa</value>
+	</data>
+	<data name="WS.listShow.lblMessage1">
+		<value>Encontra-se na pesquisa avançada, recomendada aos utilizadores que possuem 
+alguma informação sobre o que querem localizar.</value>
+	</data>
+	<data name="WS.listShow.lblMessage2">
+		<value>Caso os resultados da pesquisa não o satisfaçam, recomendamos que efectue nova pesquisa.</value>
+	</data>
+	<data name="WS.listShow.lblOrderBy">
+		<value>Ordenar por:</value>
+	</data>
+	<data name="WS.listShow.lblOrderByDate">
+		<value>Data</value>
+	</data>
+	<data name="WS.listShow.lblOrderByTitle">
+		<value>Título</value>
+	</data>
+	<data name="WS.listShow.lblOrderByLevel">
+		<value>Nível</value>
+	</data>
+	<data name="WS.listShow.lblOtherLevel">
+		<value>Nível de descrição</value>
+	</data>
+	<data name="WS.listShow.lblCompleteUnitID">
+		<value>Código de referência</value>
+	</data>
+	<data name="WS.listShow.lblUnitTitle">
+		<value>Título</value>
+	</data>
+	<data name="WS.listShow.lblDates">
+		<value>Datas</value>
+	</data>
+	<data name="WS.listShow.lblPhysLoc">
+		<value>Localização física</value>
+	</data>
+	<data name="WS.listShow.lblAuthorityRecord">
+		<value>Registo de autoridade</value>
+	</data>
+	<data name="WS.listShow.lblDigitalDoc">
+		<value>Documento digitalizado</value>
+	</data>
+	<data name="WS.listShow.messageError1">
+		<value>Não foram encontrados registos!</value>
+	</data>
+	<data name="WS.listShow.messageError2">
+		<value>Verifique os dados que inseriu e/ou reformule a sua pesquisa.</value>
+	</data>
+	<data name="WS.listShow.lblNumberRecords1">
+		<value>Foi encontrado apenas um item!</value>
+	</data>
+	<data name="WS.listShow.lblNumberRecords2">
+		<value>Item {0} a {1} de um total de {2} items encontrados.</value>
+	</data>
+	<data name="WS.language.pt-PT">
+		<value>Português</value>
+	</data>
+	<data name="WS.language.en-GB">
+		<value>Inglês</value>
+	</data>
+	<data name="WS.regShow.hlnkAuthorityRecord">
+		<value>Registo de autoridade</value>
+	</data>
+	<data name="WS.regShow.hlnkConsultationRequest">
+		<value>Pedido de consulta</value>
+	</data>
+	<data name="WS.regShow.hlnkReservationRequest">
+		<value>Pedido de reserva</value>
+	</data>
+	<data name="WS.regShow.hlnkReproductionRequest">
+		<value>Pedido de reprodução</value>
+	</data>
+	<data name="WS.regShow.lblMessage1">
+		<value>Informação disponível no nível de descrição em que se encontra.</value>
+	</data>
+	<data name="WS.regShow.lblAlert1">
+		<value>Informação não disponível!</value>
+	</data>
+	<data name="WS.regShow.CompleteUnitID">
+		<value>Código de referência</value>
+	</data>
+	<data name="WS.regShow.Repository">
+		<value>Entidade detentora</value>
+	</data>
+	<data name="WS.regShow.UnitTitle">
+		<value>Título</value>
+	</data>
+	<data name="WS.regShow.Dates">
+		<value>Datas</value>
+	</data>
+	<data name="WS.regShow.UnitDateBulk">
+		<value>Datas predominantes</value>
+	</data>
+	<data name="WS.regShow.OtherLevel">
+		<value>Nível de descrição</value>
+	</data>
+	<data name="WS.regShow.Dimensions">
+		<value>Dimensão e suporte</value>
+	</data>
+	<data name="WS.regShow.GenreForm">
+		<value>Tipologia</value>
+	</data>
+	<data name="WS.regShow.GeogName">
+		<value>Localidades</value>
+	</data>
+	<data name="WS.regShow.OriginationAuthor">
+		<value>Produtores</value>
+	</data>
+	<data name="WS.regShow.OriginationAuthorAddress">
+		<value>Moradas dos produtores</value>
+	</data>
+	<data name="WS.regShow.OriginationDestination">
+		<value>Destinatários</value>
+	</data>
+	<data name="WS.regShow.OriginationDestinationAddress">
+		<value>Morada dos destinatários</value>
+	</data>
+	<data name="WS.regShow.OriginationScrivener">
+		<value>Escrivão</value>
+	</data>
+	<data name="WS.regShow.OriginationNotary">
+		<value>Notário</value>
+	</data>
+	<data name="WS.regShow.BiogHist">
+		<value>História administrativa/biográfica</value>
+	</data>
+	<data name="WS.regShow.CustodHist">
+		<value>História custodial</value>
+	</data>
+	<data name="WS.regShow.AcqInfo">
+		<value>Modalidades de aquisição</value>
+	</data>
+	<data name="WS.regShow.ScopeContent">
+		<value>Âmbito e conteúdo</value>
+	</data>
+	<data name="WS.regShow.Arrangement">
+		<value>Organização e ordenação</value>
+	</data>
+	<data name="WS.regShow.PhysLoc">
+		<value>Localização física</value>
+	</data>
+	<data name="WS.regShow.PhysFacet">
+		<value>Aspectos físicos particulares</value>
+	</data>
+	<data name="WS.regShow.MaterialSpec">
+		<value>Detalhes específicos dos materiais</value>
+	</data>
+	<data name="WS.regShow.PhysTech">
+		<value>Características físicas e requisitos técnicos</value>
+	</data>
+	<data name="WS.regShow.OtherFindAid">
+		<value>Instrumentos de pesquisa</value>
+	</data>
+	<data name="WS.regShow.AccessRestrict">
+		<value>Condições de acesso</value>
+	</data>
+	<data name="WS.regShow.UseRestrict">
+		<value>Condições de reproducão</value>
+	</data>
+	<data name="WS.regShow.LangMaterial">
+		<value>Idioma/escrita</value>
+	</data>
+	<data name="WS.regShow.LegalStatus">
+		<value>Estatuto Legal</value>
+	</data>
+	<data name="WS.regShow.OriginalsLoc">
+		<value>Existência e localização de originais</value>
+	</data>
+	<data name="WS.regShow.AltFormAvail">
+		<value>Existência e localização de cópias</value>
+	</data>
+	<data name="WS.regShow.RelatedMaterial">
+		<value>Unidades de descrição relacionadas</value>
+	</data>
+	<data name="WS.regShow.SeparatedMaterial">
+		<value>Material separado</value>
+	</data>
+	<data name="WS.regShow.Note">
+		<value>Notas/observações</value>
+	</data>
+	<data name="WS.regShow.ObjectDigital">
+		<value>Documento digitalizado</value>
+	</data>
+	<data name="WS.regShow.altURL">
+		<value>Utilize este endereço para aceder directamente a este registo.</value>
+	</data>
+	<data name="WS.regShow.altPrint">
+		<value>Imprimir este registo</value>
+	</data>
+	<data name="WS.regShow.altShowDO">
+		<value>Ver objecto digital associado</value>
+	</data>
+	<data name="WS.authorityRecord">
+		<value>Registo de Autoridade</value>
+	</data>
+	<data name="WS.authorityRecord.EacType">
+		<value>Tipo de entidade:</value>
+	</data>
+	<data name="WS.authorityRecord.EacAuthorizedName">
+		<value>Forma autorizada do nome:</value>
+	</data>
+	<data name="WS.authorityRecord.EacIdentity">
+		<value>Zona de identificação</value>
+	</data>
+	<data name="WS.authorityRecord.EacBiogHist">
+		<value>História:</value>
+	</data>
+	<data name="WS.authorityRecord.EacLocation">
+		<value>Áreas geográficas:</value>
+	</data>
+	<data name="WS.authorityRecord.EacLegalStatus">
+		<value>Estatuto jurídico/legal:</value>
+	</data>
+	<data name="WS.authorityRecord.EacFunActDesc">
+		<value>Funções, ocupações e actividades:</value>
+	</data>
+	<data name="WS.authorityRecord.EacLegalId">
+		<value>Mandato(s)/Fontes de autoridade:</value>
+	</data>
+	<data name="WS.authorityRecord.EacAssetStruct">
+		<value>Estrutura(s) interna(s):</value>
+	</data>
+	<data name="WS.authorityRecord.EacEnv">
+		<value>Contexto geral:</value>
+	</data>
+	<data name="WS.authorityRecord.EacDesc">
+		<value>Zona de descrição</value>
+	</data>
+	<data name="WS.authorityRecord.EacRels">
+		<value>Zona das relações</value>
+	</data>
+	<data name="WS.authorityRecord.EacId">
+		<value>Identificador do registo de autoridade:</value>
+	</data>
+	<data name="WS.authorityRecord.EacOwnerCode">
+		<value>Identificador da instituição:</value>
+	</data>
+	<data name="WS.authorityRecord.EacRuleDecl">
+		<value>Regras e/ou convenções:</value>
+	</data>
+	<data name="WS.authorityRecord.EacStatus">
+		<value>Estatuto do registo de autoridade:</value>
+	</data>
+	<data name="WS.authorityRecord.EacDetailLevel">
+		<value>Nível de detalhe do registo de autoridade:</value>
+	</data>
+	<data name="WS.authorityRecord.EacControl">
+		<value>Zona do controlo</value>
+	</data>
+	<data name="WS.authorityRecord.EacArchRels">
+		<value>Ligação do registo de autoridade arquívistica à documentação de arquivo e a outros recursos</value>
+	</data>
+	<data name="WS.authorityRecord.altPrint">
+		<value>Imprimir registo de autoridade</value>
+	</data>
+	<!--====== ALT ========================================================================-->
+	<data name="alt.Print">
+		<value>Imprimir</value>
+	</data>
+	<data name="alt.First">
+		<value>Primeiro</value>
+	</data>
+		<data name="alt.Last">
+		<value>Último</value>
+	</data>
+		<data name="alt.Previous">
+		<value>Anterior</value>
+	</data>
+	<data name="alt.Next">
+		<value>Seguinte</value>
+	</data>
+</root>

@@ -1,0 +1,240 @@
+
+#Region "License Agreement"
+
+'* DigitArq
+'* Copyright 2007-2015 
+'* Arquivo Distrital do Porto
+'* Todos os direitos reservados.
+'*  
+'* Este software foi desenvolvido pelo Arquivo
+'* Distrital do Porto (http://www.adporto.pt)
+'* em articulação com a Direcção-Geral de Arquivos
+'* (http://www.dgarq.gov.pt) e com a coordenação
+'* informática da Universidade do Minho
+'* (http://www.uminho.pt).
+'* O desenvolvimento deste produto foi parcialmente
+'* financiado pelo Programa Operacional para a 
+'* Cultura (POC) promovido pelo Governo Português.
+'* ---------------------------------------------------
+'*
+'* A redistribuição e utilização deste produto sob a
+'* forma de código-fonte ou programa compilado, com ou
+'* sem modificações, é permitida desde que o seguinte
+'* conjunto de condições seja cumprido:
+'* 
+'*	* Todas as redistribuições do código-fonte 
+'*	  deste produto deverão ser acompanhadas do
+'*	  texto que compõe esta licença, incluindo o 
+'*	  texto inicial de atribuição de autoria,
+'*	  esta lista de condições e do seguinte termo
+'*	  de responsabilidade.
+'*
+'*	* Os nomes da Direcção-Geral de Arquivos,
+'*	  do Arquivo Distrital do Porto, da 
+'*	  Universidade do Minho e das pessoas 
+'*	  individuais que colaboraram no desenvolvimento 
+'*	  deste produto não deverão ser utilizados na 
+'*	  promoção de produtos derivados deste 
+'*	  sem que seja obtido consentimento prévio, por
+'*	  escrito, por parte dos visados.
+
+'*	* A utilização da designação DigitArq, seus 
+'*	  logótipos e nomes institucionais associados
+'*	  é apenas permitida em distribuições que sejam
+'*	  cópias exactas da versão oficial deste produto
+'*	  aprovada e/ou distribuída pela Direcção-Geral 
+'*	  de Arquivos.
+
+'*	* O desenvolvimento de obras derivadas deste
+'*	  produto é permitido desde que a designação 
+'*	  DigitArq, seus logotipos e parceiros 
+'*	  institucionais não sejam utilizados em todo e
+'*	  qualquer tipo de distribuição e/ou promoção 
+'*	  da obra derivada.
+'* 
+'* ESTE SOFTWARE É DISTRIBUIDO PELA DIRECÇÃO-GERAL DE
+'* ARQUIVOS "NO ESTADO EM QUE SE ENCONTRA" SEM QUALQUER
+'* PRESUNÇÃO DE QUALIDADE OU GARANTIA ASSOCIADAS, 
+'* INCLUINDO, MAS NÃO LIMITADO A, GARANTIAS ASSOCIADAS
+'* A COMÉRCIO DE PRODUTOS OU DECLARAÇÃO DE ADEQUABILIDADE
+'* A DETERMINADO FIM OU OBJECTIVO. 
+
+'* EM NENHUMA CIRCUNSTÂNCIA PODERÁ A DIRECÇÃO-GERAL DE 
+'* ARQUIVOS SER CONSIDERADA RESPONSÁVEL POR QUAISQUER 
+'* DANOS QUE RESULTEM DA UTILIZAÇÃO DIRECTA, INDIRECTA,
+'* ACIDENTAL, ESPECIAL OU DEMONSTRATIVA DESTE PRODUTO 
+'* (INCLUINDO, MAS NÃO LIMITADO A, PERDAS DE DADOS, 
+'* LUCROS, FALÊNCIA, INDEVIDA PRESTAÇÃO DE SERVIÇOS
+'* OU NEGLIGÊNCIA), AINDA QUE O LICENCIANTE TENHA SIDO 
+'* AVISADO DA POSSIBILIDADE DA OCORRÊNCIA DE TAIS DANOS.
+'*
+'* ---------------------------------------------------
+'* Para mais informação sobre este produto ou a sua 
+'* licença, é favor consultar o endereço electrónico
+'* http://www.digitarq.pt
+
+#End Region
+
+Imports System.Data.SqlClient
+
+Public Class TechnologicalPlatform
+
+    Private myTPlatformID As Integer
+    Private myScannerModelName As String
+    Private myDeviceSource As String
+    Private myScannerManufacturer As String
+    Private myScanningSoftware As String
+    Private myScanningSoftwareVersionNo As String
+    Private myOperatingSystem As String
+    Private myOperatingSystemVersion As String
+
+#Region "Constructors"
+
+    Public Sub New(ByVal ScannerModelName As String, ByVal TPlatformID As Integer)
+        myTPlatformID = TPlatformID
+        myScannerModelName = ScannerModelName
+    End Sub
+
+    Public Sub New(ByVal TPlatformID As Integer, ByVal ScannerModelName As String, _
+        ByVal DeviceSource As String, ByVal ScannerManufacturer As String, _
+        ByVal ScanningSoftware As String, ByVal ScanningSoftwareVersionNo As String, _
+        ByVal OperatingSystem As String, ByVal OperatingSystemVersion As String)
+
+        myTPlatformID = TPlatformID
+        myScannerModelName = ScannerModelName
+        myDeviceSource = DeviceSource
+        myScannerManufacturer = ScannerManufacturer
+        myScanningSoftware = ScanningSoftware
+        myScanningSoftwareVersionNo = ScanningSoftwareVersionNo
+        myOperatingSystem = OperatingSystem
+        myOperatingSystemVersion = OperatingSystemVersion
+    End Sub
+
+#End Region
+
+    Public Overrides Function tostring() As String
+        Return Me.myScannerModelName
+    End Function
+
+#Region "Properties"
+
+    Property TPlatformID() As Integer
+        Get
+            Return myTPlatformID
+        End Get
+        Set(ByVal Value As Integer)
+            myTPlatformID = Value
+        End Set
+    End Property
+
+    Property ScannerModelName() As String
+        Get
+            Return myScannerModelName
+        End Get
+        Set(ByVal Value As String)
+            myScannerModelName = Value
+        End Set
+    End Property
+
+    Property DeviceSource() As String
+        Get
+            Return myDeviceSource
+        End Get
+        Set(ByVal Value As String)
+            myDeviceSource = Value
+        End Set
+    End Property
+
+    Property ScannerManufacturer() As String
+        Get
+            Return myScannerManufacturer
+        End Get
+        Set(ByVal Value As String)
+            myScannerManufacturer = Value
+        End Set
+    End Property
+
+    Property ScanningSoftware() As String
+        Get
+            Return myScanningSoftware
+        End Get
+        Set(ByVal Value As String)
+            myScanningSoftware = Value
+        End Set
+    End Property
+
+    Property ScanningSoftwareVersionNo() As String
+        Get
+            Return myScanningSoftwareVersionNo
+        End Get
+        Set(ByVal Value As String)
+            myScanningSoftwareVersionNo = Value
+        End Set
+    End Property
+
+    Property OperatingSystem() As String
+        Get
+            Return myOperatingSystem
+        End Get
+        Set(ByVal Value As String)
+            myOperatingSystem = Value
+        End Set
+    End Property
+
+    Property Description() As String
+        Get
+            Return myOperatingSystemVersion
+        End Get
+        Set(ByVal Value As String)
+            myOperatingSystemVersion = Value
+        End Set
+    End Property
+
+#End Region
+
+End Class
+
+
+Public Class TechnologicalPlatformCollection
+    Inherits CollectionBase
+
+
+    Default Public Property Item(ByVal index As Integer) As TechnologicalPlatformCollection
+        Get
+            Return CType(List(index), TechnologicalPlatformCollection)
+        End Get
+        Set(ByVal Value As TechnologicalPlatformCollection)
+            List(index) = Value
+        End Set
+    End Property
+
+    Public Function Add(ByVal ScannerModelName As String, ByVal TPlatformID As Integer) As Integer
+        Return List.Add(New TechnologicalPlatform(ScannerModelName, TPlatformID))
+    End Function
+
+    Public Function Add(ByVal TPlatformID As Integer, ByVal ScannerModelName As String, _
+            ByVal DeviceSource As String, ByVal ScannerManufacturer As String, _
+            ByVal ScanningSoftware As String, ByVal ScanningSoftwareVersionNo As String, _
+            ByVal OperatingSystem As String, ByVal OperatingSystemVersion As String) As Integer
+        Return List.Add(New TechnologicalPlatform(TPlatformID, ScannerModelName, DeviceSource, ScannerManufacturer, _
+            ScanningSoftware, ScanningSoftwareVersionNo, OperatingSystem, OperatingSystemVersion))
+    End Function
+
+    Public Function IndexOf(ByVal value As TechnologicalPlatform) As Integer
+        Return List.IndexOf(value)
+    End Function
+
+    Public Sub Insert(ByVal index As Integer, ByVal value As TechnologicalPlatform)
+        List.Insert(index, value)
+    End Sub
+
+    Public Sub Remove(ByVal value As TechnologicalPlatform)
+        List.Remove(value)
+    End Sub
+
+    Public Function Contains(ByVal value As TechnologicalPlatform) As Boolean
+        Return List.Contains(value)
+    End Function
+
+End Class
+

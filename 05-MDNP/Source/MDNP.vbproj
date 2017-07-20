@@ -1,0 +1,542 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B45D4CD7-F281-4CB6-A6BF-EB418599D0E1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>WebSearch2</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>WebSearch2</RootNamespace>
+    <StartupObject>WebSearch2.%28None%29</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <UseIISExpress>false</UseIISExpress>
+    <UpgradeBackupLocation />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WebSearch2.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WebSearch2.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Web.UI.WebControls">
+      <Name>Microsoft.Web.UI.WebControls</Name>
+      <HintPath>..\CRAVFrontOffice\bin\Microsoft.Web.UI.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install">
+      <Name>System.Configuration.Install</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.DirectoryServices">
+      <Name>System.DirectoryServices</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.HtmlControls" />
+    <Import Include="System.Web.UI.WebControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\advancedSearch.ascx.vb">
+      <DependentUpon>advancedSearch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\authorityRecord.ascx.vb">
+      <DependentUpon>authorityRecord.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\basicSearch.ascx.vb">
+      <DependentUpon>basicSearch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\help.ascx.vb">
+      <DependentUpon>help.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\introduction.ascx.vb">
+      <DependentUpon>introduction.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\listShow.ascx.vb">
+      <DependentUpon>listShow.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\regShow.ascx.vb">
+      <DependentUpon>regShow.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data Base\Collections\ControlAccessItemCollection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Base\Collections\ControlAccessTypeCollection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Base\Collections\ControlAcessTypesTblFields.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Base\Collections\FondsListCollection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Base\Collections\Node.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Base\Collections\RecordsIDCollection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Base\Collections\URLS.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Base\Data Classes\Bibliography.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Base\Data Classes\ChronList.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Base\Data Classes\DaoGrp.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Base\Data Classes\DigitalObject.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Base\Data Classes\DOImage.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Base\Data Classes\DOImages.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Base\EAD\Data Classes\EacArchRelationships.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Base\EAD\Data Classes\EacIdentity.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Base\EAD\Data Classes\EacLanguageDeclaration.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Base\EAD\Data Classes\EacMaintenanceHistory.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Base\EAD\Data Classes\EacRelationships.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Base\EAD\Data Classes\EacResourceRelationships.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Base\EAD\EAC.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data Base\EAD\EADDefinitions.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Base\EAD\General.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Base\Lazy Node\AdvancedSearch.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Base\Lazy Node\AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Base\Lazy Node\BasicSearch.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Base\Lazy Node\BooleanSearchFields.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Base\Lazy Node\IndexTerms.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Base\Lazy Node\IntervalDates.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Base\Lazy Node\LazyNode.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Base\Lazy Node\LazyNodeCollection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Base\Lazy Node\RecordsCollection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Base\Lazy Node\SQLLazyNode.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HeaderFrontpage.aspx.vb">
+      <DependentUpon>HeaderFrontpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImageFullScreen.aspx.vb">
+      <DependentUpon>ImageFullScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Initial.aspx.vb">
+      <DependentUpon>Initial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Installer.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modules\BaseClassP.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\BaseClassUC.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\mBuildQuery.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modules\mShowItems.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modules\utils.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ODDisplay.aspx.vb">
+      <DependentUpon>ODDisplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OtherControls\footer.ascx.vb">
+      <DependentUpon>footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OtherControls\header.ascx.vb">
+      <DependentUpon>header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OtherControls\horizontalMenu.ascx.vb">
+      <DependentUpon>horizontalMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OtherControls\language.ascx.vb">
+      <DependentUpon>language.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OtherControls\legendOtherLevel.ascx.vb">
+      <DependentUpon>legendOtherLevel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OtherControls\menuLeft.ascx.vb">
+      <DependentUpon>menuLeft.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OtherControls\objFlash.ascx.vb">
+      <DependentUpon>objFlash.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowFile.aspx.vb">
+      <DependentUpon>ShowFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Content Include="Controls\advancedSearch.ascx" />
+    <Content Include="Controls\authorityRecord.ascx" />
+    <Content Include="Controls\basicSearch.ascx" />
+    <Content Include="Controls\help.ascx" />
+    <Content Include="Controls\introduction.ascx" />
+    <Content Include="Controls\listShow.ascx" />
+    <Content Include="Controls\regShow.ascx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Flash\1.swf" />
+    <Content Include="Flash\logotipo.swf" />
+    <Content Include="Global.asax" />
+    <Content Include="HeaderFrontpage.aspx" />
+    <Content Include="ImageFullScreen.aspx" />
+    <Content Include="Images\Alert.gif" />
+    <Content Include="Images\AuthorityRecord.gif" />
+    <Content Include="Images\backgrd.jpg" />
+    <Content Include="Images\barra.gif" />
+    <Content Include="Images\barra1.gif" />
+    <Content Include="Images\Closed Folder_ico_1.ico" />
+    <Content Include="Images\collapse.gif" />
+    <Content Include="Images\collapsed.gif" />
+    <Content Include="Images\d.jpg" />
+    <Content Include="Images\dc.jpg" />
+    <Content Include="Images\DeleteDocument.gif" />
+    <Content Include="Images\DigitArq.png" />
+    <Content Include="Images\Document.gif" />
+    <Content Include="Images\en.jpg" />
+    <Content Include="Images\expanded.gif" />
+    <Content Include="Images\expands.gif" />
+    <Content Include="Images\f.jpg" />
+    <Content Include="Images\fullscreen.PNG" />
+    <Content Include="Images\helpExNot.gif" />
+    <Content Include="Images\HelpExOR.gif" />
+    <Content Include="Images\helpExPE.gif" />
+    <Content Include="Images\HelpItens.gif" />
+    <Content Include="Images\HelpItensB.gif" />
+    <Content Include="Images\Image.gif" />
+    <Content Include="Images\imagesFolder.gif" />
+    <Content Include="Images\info.gif" />
+    <Content Include="Images\L.gif" />
+    <Content Include="Images\lado.gif" />
+    <Content Include="Images\linkarrow.gif" />
+    <Content Include="Images\logoTipoF.gif" />
+    <Content Include="Images\logo_po.gif" />
+    <Content Include="Images\mediumsizelogo.gif" />
+    <Content Include="Images\next.PNG" />
+    <Content Include="Images\OBDateASC.gif" />
+    <Content Include="Images\OBDateDESC.gif" />
+    <Content Include="Images\OBDateInitial.gif" />
+    <Content Include="Images\OBOtherLevelASC.gif" />
+    <Content Include="Images\OBOtherLevelDESC.gif" />
+    <Content Include="Images\OBOtherLevelInitial.gif" />
+    <Content Include="Images\Obras2.jpg" />
+    <Content Include="Images\OBTitleASC.gif" />
+    <Content Include="Images\OBTitleDESC.gif" />
+    <Content Include="Images\OBTitleInitial.gif" />
+    <Content Include="Images\Open Folder_ico_2.ico" />
+    <Content Include="Images\orderASC.GIF" />
+    <Content Include="Images\orderDESC.GIF" />
+    <Content Include="Images\previous.PNG" />
+    <Content Include="Images\printWB.gif" />
+    <Content Include="Images\pt.jpg" />
+    <Content Include="Images\RegDesc.gif" />
+    <Content Include="Images\rotateLeft.PNG" />
+    <Content Include="Images\rotateRight.PNG" />
+    <Content Include="Images\sc.jpg" />
+    <Content Include="Images\setafinal_dir.GIF" />
+    <Content Include="Images\setafinal_esq.GIF" />
+    <Content Include="Images\seta_dir.gif" />
+    <Content Include="Images\seta_esq.gif" />
+    <Content Include="Images\sf.jpg" />
+    <Content Include="Images\Shearch.gif" />
+    <Content Include="Images\Shearch2.gif" />
+    <Content Include="Images\sponsors.PNG" />
+    <Content Include="Images\sr.jpg" />
+    <Content Include="Images\ssc.jpg" />
+    <Content Include="Images\ssr.jpg" />
+    <Content Include="Images\sssc.jpg" />
+    <Content Include="Images\T.gif" />
+    <Content Include="Images\title.gif" />
+    <Content Include="Images\ue.gif" />
+    <Content Include="Images\ui.jpg" />
+    <Content Include="Images\umPorUm.PNG" />
+    <Content Include="Images\zoomIn.PNG" />
+    <Content Include="Images\zoomOut.PNG" />
+    <Content Include="Initial.aspx" />
+    <Content Include="Jscripts\images.js" />
+    <Content Include="Jscripts\JScript1.js" />
+    <Content Include="Jscripts\prototype.js" />
+    <Content Include="Jscripts\utils.js" />
+    <Content Include="ODDisplay.aspx" />
+    <Content Include="OtherControls\footer.ascx" />
+    <Content Include="OtherControls\header.ascx" />
+    <Content Include="OtherControls\horizontalMenu.ascx" />
+    <Content Include="OtherControls\language.ascx" />
+    <Content Include="OtherControls\legendOtherLevel.ascx" />
+    <Content Include="OtherControls\menuLeft.ascx" />
+    <Content Include="OtherControls\objFlash.ascx" />
+    <Content Include="Resources\app.ico" />
+    <Content Include="Resources\banner.JPG" />
+    <Content Include="ShowFile.aspx" />
+    <Content Include="Styles\menu.css" />
+    <Content Include="Styles\Styles.css" />
+    <Content Include="TreeImages\addFile.gif" />
+    <Content Include="TreeImages\addFolder.gif" />
+    <Content Include="TreeImages\dot.gif" />
+    <Content Include="TreeImages\F.gif" />
+    <Content Include="TreeImages\file.gif" />
+    <Content Include="TreeImages\Fminus.gif" />
+    <Content Include="TreeImages\folder.gif" />
+    <Content Include="TreeImages\folder_closed.gif" />
+    <Content Include="TreeImages\folder_opened.gif" />
+    <Content Include="TreeImages\Fplus.gif" />
+    <Content Include="TreeImages\html.gif" />
+    <Content Include="TreeImages\I.gif" />
+    <Content Include="TreeImages\L.gif" />
+    <Content Include="TreeImages\lock.gif" />
+    <Content Include="TreeImages\minus.gif" />
+    <Content Include="TreeImages\plus.gif" />
+    <Content Include="TreeImages\refresh.gif" />
+    <Content Include="TreeImages\root.gif" />
+    <Content Include="TreeImages\T.gif" />
+    <Content Include="TreeImages\Tminus.gif" />
+    <Content Include="TreeImages\Tplus.gif" />
+    <Content Include="TreeImages\up.gif" />
+    <Content Include="TreeImages\webpage.gif" />
+    <Content Include="TreeImages\x.gif" />
+    <Content Include="Web.config" />
+    <EmbeddedResource Include="Controls\advancedSearch.ascx.resx">
+      <DependentUpon>advancedSearch.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\authorityRecord.ascx.resx">
+      <DependentUpon>authorityRecord.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\basicSearch.ascx.resx">
+      <DependentUpon>basicSearch.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\help.ascx.resx">
+      <DependentUpon>help.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\introduction.ascx.resx">
+      <DependentUpon>introduction.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\listShow.ascx.resx">
+      <DependentUpon>listShow.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\regShow.ascx.resx">
+      <DependentUpon>regShow.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Default.aspx.resx">
+      <DependentUpon>Default.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFrontpage.aspx.resx">
+      <DependentUpon>HeaderFrontpage.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageFullScreen.aspx.resx">
+      <DependentUpon>ImageFullScreen.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Initial.aspx.resx">
+      <DependentUpon>Initial.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Installer.resx">
+      <DependentUpon>Installer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ODDisplay.aspx.resx">
+      <DependentUpon>ODDisplay.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherControls\footer.ascx.resx">
+      <DependentUpon>footer.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherControls\header.ascx.resx">
+      <DependentUpon>header.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherControls\horizontalMenu.ascx.resx">
+      <DependentUpon>horizontalMenu.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherControls\language.ascx.resx">
+      <DependentUpon>language.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherControls\legendOtherLevel.ascx.resx">
+      <DependentUpon>legendOtherLevel.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherControls\menuLeft.ascx.resx">
+      <DependentUpon>menuLeft.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherControls\objFlash.ascx.resx">
+      <DependentUpon>objFlash.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="res.en-GB.resx" />
+    <EmbeddedResource Include="res.pt-PT.resx" />
+    <EmbeddedResource Include="ShowFile.aspx.resx">
+      <DependentUpon>ShowFile.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Resources\cadastro.pdf" />
+    <None Include="Resources\license.rtf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v14.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/MDNP</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

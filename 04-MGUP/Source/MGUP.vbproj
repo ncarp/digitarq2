@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0D2BA23C-329A-4295-A2FA-EF819A023A3B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>GPU</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>GPU</RootNamespace>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <UseIISExpress>false</UseIISExpress>
+    <UpgradeBackupLocation />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>GPU.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>GPU.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="blong">
+      <Name>blong</Name>
+      <HintPath>..\..\..\Documents and Settings\admin\Desktop\WebChartSamples\WebChartSamples\bin\blong.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install">
+      <Name>System.Configuration.Install</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.DirectoryServices">
+      <Name>System.DirectoryServices</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Management">
+      <Name>System.Management</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.HtmlControls" />
+    <Import Include="System.Web.UI.WebControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\aplications.ascx.vb">
+      <DependentUpon>aplications.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\aplicationsMenu1.ascx.vb">
+      <DependentUpon>aplicationsMenu1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\aplicationsMenu2.ascx.vb">
+      <DependentUpon>aplicationsMenu2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\employees.ascx.vb">
+      <DependentUpon>employees.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\employeesMenu1.ascx.vb">
+      <DependentUpon>employeesMenu1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\employeesMenu2.ascx.vb">
+      <DependentUpon>employeesMenu2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\error.ascx.vb">
+      <DependentUpon>error.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\footer.ascx.vb">
+      <DependentUpon>footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\header.ascx.vb">
+      <DependentUpon>header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\initial.ascx.vb">
+      <DependentUpon>initial.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\login.ascx.vb">
+      <DependentUpon>login.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\menuLeft.ascx.vb">
+      <DependentUpon>menuLeft.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\profiles.ascx.vb">
+      <DependentUpon>profiles.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\profilesMenu1.ascx.vb">
+      <DependentUpon>profilesMenu1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\profilesMenu2.ascx.vb">
+      <DependentUpon>profilesMenu2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\statsArchiveGPGOD.ascx.vb">
+      <DependentUpon>statsArchiveGPGOD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\statsGPGOD.ascx.vb">
+      <DependentUpon>statsGPGOD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\statsIBD.ascx.vb">
+      <DependentUpon>statsIBD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\statsIBDGerRel.ascx.vb">
+      <DependentUpon>statsIBDGerRel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\statsIBDsub.ascx.vb">
+      <DependentUpon>statsIBDsub.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\statsIPG.ascx.vb">
+      <DependentUpon>statsIPG.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\statsIS.ascx.vb">
+      <DependentUpon>statsIS.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\statsPGArq.ascx.vb">
+      <DependentUpon>statsPGArq.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\statsPGFunc.ascx.vb">
+      <DependentUpon>statsPGFunc.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\systemResources.ascx.vb">
+      <DependentUpon>systemResources.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataBaseAccess\Interface.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataBaseAccess\SQLDataBase.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="defaultIn.aspx.vb">
+      <DependentUpon>defaultIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EntityClasses\Aplication.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityClasses\Employee.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityClasses\Function.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityClasses\Profile.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ExtraClasses\ArquiveGroup.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ExtraClasses\Record.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Installer.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modules\BaseClassP.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\BaseClassUC.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\database.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modules\Encrypt.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modules\General.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modules\Misc.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\mShowItems.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modules\utils.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="Controls\aplications.ascx" />
+    <Content Include="Controls\aplicationsMenu1.ascx" />
+    <Content Include="Controls\aplicationsMenu2.ascx" />
+    <Content Include="Controls\employees.ascx" />
+    <Content Include="Controls\employeesMenu1.ascx" />
+    <Content Include="Controls\employeesMenu2.ascx" />
+    <Content Include="Controls\error.ascx" />
+    <Content Include="Controls\footer.ascx" />
+    <Content Include="Controls\header.ascx" />
+    <Content Include="Controls\initial.ascx" />
+    <Content Include="Controls\login.ascx" />
+    <Content Include="Controls\menuLeft.ascx" />
+    <Content Include="Controls\profiles.ascx" />
+    <Content Include="Controls\profilesMenu1.ascx" />
+    <Content Include="Controls\profilesMenu2.ascx" />
+    <Content Include="Controls\statsArchiveGPGOD.ascx" />
+    <Content Include="Controls\statsGPGOD.ascx" />
+    <Content Include="Controls\statsIBD.ascx" />
+    <Content Include="Controls\statsIBDGerRel.ascx" />
+    <Content Include="Controls\statsIBDsub.ascx" />
+    <Content Include="Controls\statsIPG.ascx" />
+    <Content Include="Controls\statsIS.ascx" />
+    <Content Include="Controls\statsPGArq.ascx" />
+    <Content Include="Controls\statsPGFunc.ascx" />
+    <Content Include="Controls\systemResources.ascx" />
+    <Content Include="default.aspx" />
+    <Content Include="defaultIn.aspx" />
+    <Content Include="Files\database.sql" />
+    <Content Include="Files\functions.xml" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\adporto.png" />
+    <Content Include="Images\adportoSmall.png" />
+    <Content Include="Images\BBgBodyHeader.png" />
+    <Content Include="Images\BBgCenterHeader.gif" />
+    <Content Include="Images\BBgDgFooter.png" />
+    <Content Include="Images\BBgDgHeader.png" />
+    <Content Include="Images\BBgFooter.png" />
+    <Content Include="Images\BBgHeader.gif" />
+    <Content Include="Images\BBgHighDgHeader.png" />
+    <Content Include="Images\bottomLarge.gif" />
+    <Content Include="Images\breadcrumb.gif" />
+    <Content Include="Images\cancel.png" />
+    <Content Include="Images\collapsed.gif" />
+    <Content Include="Images\crav_top.jpg" />
+    <Content Include="Images\delete.png" />
+    <Content Include="Images\detalhe1.gif" />
+    <Content Include="Images\edit.png" />
+    <Content Include="Images\editUser.PNG" />
+    <Content Include="Images\expanded.gif" />
+    <Content Include="Images\folder.png" />
+    <Content Include="Images\icon_chart.gif" />
+    <Content Include="Images\linkarrow.gif" />
+    <Content Include="Images\logotipo_adp.png" />
+    <Content Include="Images\minus.GIF" />
+    <Content Include="Images\plus.GIF" />
+    <Content Include="Images\print.png" />
+    <Content Include="Images\save.png" />
+    <Content Include="Images\shade.gif" />
+    <Content Include="Images\shadeactive.gif" />
+    <Content Include="Images\title.gif" />
+    <Content Include="Images\toptitleLarge.gif" />
+    <Content Include="JScripts\clientUtils.js" />
+    <Content Include="JScripts\fullJS.js" />
+    <Content Include="JScripts\menu.js" />
+    <Content Include="JScripts\menuOut.js" />
+    <Content Include="JScripts\ontology.js" />
+    <Content Include="JScripts\print.js" />
+    <Content Include="JScripts\utils.js" />
+    <Content Include="JScripts\xp_progress.js" />
+    <Content Include="Resources\app.ico" />
+    <Content Include="Resources\banner.JPG" />
+    <Content Include="Styles\BStyle.css" />
+    <Content Include="Styles\menu.css" />
+    <Content Include="Web.config" />
+    <EmbeddedResource Include="Controls\aplications.ascx.resx">
+      <DependentUpon>aplications.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\aplicationsMenu1.ascx.resx">
+      <DependentUpon>aplicationsMenu1.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\aplicationsMenu2.ascx.resx">
+      <DependentUpon>aplicationsMenu2.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\employees.ascx.resx">
+      <DependentUpon>employees.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\employeesMenu1.ascx.resx">
+      <DependentUpon>employeesMenu1.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\employeesMenu2.ascx.resx">
+      <DependentUpon>employeesMenu2.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\error.ascx.resx">
+      <DependentUpon>error.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\footer.ascx.resx">
+      <DependentUpon>footer.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\header.ascx.resx">
+      <DependentUpon>header.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\initial.ascx.resx">
+      <DependentUpon>initial.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\login.ascx.resx">
+      <DependentUpon>login.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\menuLeft.ascx.resx">
+      <DependentUpon>menuLeft.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\profiles.ascx.resx">
+      <DependentUpon>profiles.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\profilesMenu1.ascx.resx">
+      <DependentUpon>profilesMenu1.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\profilesMenu2.ascx.resx">
+      <DependentUpon>profilesMenu2.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\statsArchiveGPGOD.ascx.resx">
+      <DependentUpon>statsArchiveGPGOD.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\statsGPGOD.ascx.resx">
+      <DependentUpon>statsGPGOD.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\statsIBD.ascx.resx">
+      <DependentUpon>statsIBD.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\statsIBDGerRel.ascx.resx">
+      <DependentUpon>statsIBDGerRel.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\statsIBDsub.ascx.resx">
+      <DependentUpon>statsIBDsub.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\statsIPG.ascx.resx">
+      <DependentUpon>statsIPG.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\statsIS.ascx.resx">
+      <DependentUpon>statsIS.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\statsPGArq.ascx.resx">
+      <DependentUpon>statsPGArq.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\statsPGFunc.ascx.resx">
+      <DependentUpon>statsPGFunc.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\systemResources.ascx.resx">
+      <DependentUpon>systemResources.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="default.aspx.resx">
+      <DependentUpon>default.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="defaultIn.aspx.resx">
+      <DependentUpon>defaultIn.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Installer.resx">
+      <DependentUpon>Installer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="res.pt-PT.resx" />
+    <None Include="Resources\license.rtf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v14.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52043</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/MGUP</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

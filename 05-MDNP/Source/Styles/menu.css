@@ -1,0 +1,237 @@
+
+
+/* -=== Left Menu ===- */
+
+.sdmenu {
+    width: 170px;
+    font-family: Sans-Serif;
+    font-size: 12px;
+    padding-bottom: 10px;
+    background: #eee url(../Images/bottomLarge.gif) no-repeat  right bottom;
+    color: #FFF;
+}
+
+.sdmenu .title, .sdmenu .titlehidden{
+    display: block;
+    padding: 5px 0;
+    font-weight: bold;
+    color: white;
+    background: #FFF url(../Images/title.gif) repeat-x;
+}
+
+.sdmenu .title {
+    border-bottom: 1px solid #DDD;
+}
+
+.sdmenu .arrow {
+	margin-left: 10px;
+    margin-right: 7px;
+}
+
+.sdmenu .titlehidden {
+    border-bottom: none;
+}
+
+.sdmenu #top {
+    background: url(../Images/toptitleLarge.gif) no-repeat;
+}
+
+.sdmenu .submenu {
+    overflow: hidden;
+}
+
+.sdmenu .submenu a {
+    padding: 5px 0;
+    text-indent: 10px;
+    background: #EEE;
+    display: block;
+    border-bottom: 1px solid #DDD;
+    color: #066;
+    text-decoration: none;
+}
+
+.sdmenu .submenu a:hover {
+    background : #aaaaaa no-repeat right center;
+    color: #FFF;
+}
+
+
+/* -=== Horizontal Menu ===- */
+
+.basictab{
+padding: 10px 0px 3px 0px;
+margin-left: 0;
+font: bold 12px Verdana;
+border-bottom: 1px solid #666666;
+list-style-type: none;
+text-align: left; /*set to left, center, or right to align the menu as desired*/
+}
+
+.basictab li{
+display: inline;
+margin: 0;
+}
+
+.basictab li a{
+text-decoration: none;
+padding: 3px 7px;
+margin-right: 3px;
+border: 1px solid #666666;
+border-bottom: none;
+background-color: #cccccc;
+color: #ffffff;
+}
+
+.basictab li a:visited{
+color: #ffffff;
+}
+
+.basictab li a:hover{
+background-color: #666666;
+color: #ffffff;
+}
+
+.basictab li a:active{
+color: #ffffff;
+}
+
+.basictab li.selected a{ /*selected tab effect*/
+position: relative;
+top: 1px;
+padding-top: 4px;
+background-color: #666666;
+color: #ffffff;
+}
+
+
+.listNumberOfRegisters{
+ color:#ffffff;
+ background-color:#006699;
+ width:100%;
+ height:20px;
+ border:none;
+}
+
+/* -=== Horizontal Menu OrderASC ===- */
+
+.basictabOASC{
+padding: 10px 0px 3px 0px;
+margin-left: 0;
+font: bold 12px Verdana;
+/*border-bottom: 1px solid gray;*/
+list-style-type: none;
+text-align: left; /*set to left, center, or right to align the menu as desired*/
+}
+
+.basictabOASC li
+{
+padding: 0px 0px 3px 0px;
+display: inline;
+margin: 0;
+}
+
+.basictabOASC li a{
+text-decoration: none;
+padding: 3px 30px 0px 20px;
+margin-right: 3px;
+border: 1px solid #006699;
+border-bottom: none;
+background-color: #cccccc;
+color: #ffffff;
+}
+
+.basictabOASC li a:visited{
+color: #ffffff;
+}
+
+.basictabOASC li a:hover{
+background: #006699 url(../Images/orderDESC.gif) no-repeat center right;
+color: #ffffff;
+}
+
+.basictabOASC li a:active{
+color: #ffffff;
+}
+
+.basictabOASC li.selected a{ /*selected tab effect*/
+/*position:absolute;*/
+top: 1px;
+padding-top: 4px;
+/*padding-right:30px;*/
+background: #006699 url(../Images/orderASC.gif) no-repeat center right;
+color: #ffffff;
+}
+
+/* -=== Horizontal Menu OrderDESC ===- */
+
+.basictabODESC{
+padding: 10px 0px 3px 0px;
+margin-left: 0;
+font: bold 12px Verdana;
+/*border-bottom: 1px solid gray;*/
+list-style-type: none;
+text-align: left; /*set to left, center, or right to align the menu as desired*/
+}
+
+.basictabODESC li{
+display: inline;
+margin: 0;
+}
+
+.basictabODESC li a{
+text-decoration: none;
+padding: 3px 30px 0px 20px;
+margin-right: 3px;
+border: 1px solid #006699;
+border-bottom: none;
+background-color: #cccccc;
+color: #ffffff;
+}
+
+.basictabODESC li a:visited{
+color: #ffffff;
+}
+
+.basictabODESC li a:hover{
+background: #006699 url(../Images/orderASC.gif) no-repeat center right;
+color: #ffffff;
+}
+
+.basictabODESC li a:active{
+color: #ffffff;
+}
+
+.basictabODESC li.selected a{ /*selected tab effect*/
+/*position:absolute;*/
+top: 1px;
+padding-top: 4px;
+/*padding-right:30px;*/
+background: #006699 url(../Images/orderDESC.gif) no-repeat center right;
+color: #ffffff;
+}
+
+
+
+/* -=== Path Menu ===- */
+
+.breadcrumb{
+font: bold 14px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+}
+
+.breadcrumb a{
+background: transparent url(../Images/breadcrumb.gif) no-repeat center right;
+text-decoration: none;
+padding-right: 18px; /*adjust bullet image padding*/
+color: navy;
+}
+
+.breadcrumb a:visited, .breadcrumb a:active{
+color: navy;
+}
+
+.breadcrumb a:hover{
+text-decoration: underline;
+}
+
+
+

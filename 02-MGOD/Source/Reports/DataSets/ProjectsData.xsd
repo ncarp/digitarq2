@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ProjectsData" targetNamespace="http://tempuri.org/ProjectsData.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/ProjectsData.xsd" xmlns:mstns="http://tempuri.org/ProjectsData.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ProjectsData" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Projects">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ProjectID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:long" />
+							<xs:element name="Name" type="xs:string" />
+							<xs:element name="UserName" type="xs:string" minOccurs="0" />
+							<xs:element name="CreationDateTime" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="DigitalObjects">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="DigitalObjectID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:long" />
+							<xs:element name="ProjectID" type="xs:long" minOccurs="0" />
+							<xs:element name="Name" type="xs:string" />
+							<xs:element name="ArchiveDateTime" type="xs:string" />
+							<xs:element name="QuantityOfTerminalObjects" type="xs:int" minOccurs="0" />
+							<xs:element name="UserName" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Logo">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="ProjectsDataKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Projects" />
+			<xs:field xpath="mstns:ProjectID" />
+		</xs:unique>
+		<xs:unique name="ProjectsDataKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:DigitalObjects" />
+			<xs:field xpath="mstns:DigitalObjectID" />
+		</xs:unique>
+		<xs:keyref name="ProjectsDigitalObjects" refer="ProjectsDataKey1">
+			<xs:selector xpath=".//mstns:DigitalObjects" />
+			<xs:field xpath="mstns:ProjectID" />
+		</xs:keyref>
+	</xs:element>
+</xs:schema>

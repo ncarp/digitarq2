@@ -1,0 +1,275 @@
+
+/* »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» */
+/* -=== GENERIC ===- */
+BODY{font-family: arial,sans-serif; color: #666666; font-size: 11px; background-color:#ffffff; margin-left: 0; margin-right: 0; margin-bottom: 0; margin-top: 0; font-weight: normal}
+TD{font-family: arial,sans-serif; font-size: 11px; color: #666666; font-weight: normal}
+.legend{background-color: #D1DCEB;  font-size:11px; color: #000000; border-width: 1px; border-color: #7F9DB9; border-style: solid; width:15px; height:15px}
+
+
+/* -=== LINKS ===- */
+/*__DEFAULT__*/
+a:active{ text-decoration: none; font-size: 11px; font-family: arial,sans-serif; }
+a:link{ text-decoration:none; font-size: 11px; font-family: arial,sans-serif; }
+a:visited{ text-decoration: none; font-size: 11px; font-family: arial,sans-serif;}
+a:hover{ text-decoration: underline; font-size: 11px; font-family: arial,sans-serif; font-weight:bold}
+
+
+/* -=== INPUTS 4 FORMS ===- */
+INPUT, TEXTAREA, SELECT {font-family: Arial,sans-serif; font-size:11px; color: #000000}
+.normal{font-family: Arial,sans-serif; font-size:11px; color: #000000; border-width: 1px; border-color: #7F9DB9; border-style: solid} /* o estilo na checkbox não é colocado no INPUT mas n1 SPAN ... */
+.fldReq{background-color: #D1DCEB;  font-size:11px; color: #000000; border-width: 1px; border-color: #7F9DB9; border-style: solid} /*color 2 required fields*/
+.fldDisabled{background-color: #ffffff; color: #A5ACB2; font-family: Arial, Sans-Serif; font-size: 11px; border-width: 1px; border-color: #7F9DB9; border-style: solid}
+.fldView{font-family: Arial,sans-serif; font-size:11px; color: #000000; background-color: #f0f5f9; border-width: 1px; border-color: #7F9DB9; border-style: solid} /* color 2 textarea @ VIEW */
+
+/*==================================================================================================*/
+/*===== HEADER AND FOOTER ==========================================================================*/
+/*==================================================================================================*/
+
+.txtBHead {font-weight: bold; font-size: 14pt; color: #666666}
+
+.txtMsg {font-size: 8pt; color: #666666}
+.txtBMsg {font-weight: bold; font-size: 8pt; color: #666666}
+
+.bgHeadL { border-bottom: solid 1px #345487; border-top: solid 1px #345487; width:15;}
+.bgHeadC { border-bottom: solid 1px #345487; border-top: solid 1px #345487}
+.bgHeadR { border-bottom: solid 1px #345487; border-top: solid 1px #345487; width:15;}
+
+.tblHeadL {background-color: #f0f5f9; border-bottom: solid 1px #3c6988; border-left: solid 1px #3c6988; border-top: solid 1px #3c6988}
+.tblHeadC {background-color: #f0f5f9; border-bottom: solid 1px #3c6988; border-top: solid 1px #3c6988}
+.tblHeadR {background-color: #f0f5f9; border-bottom: solid 1px #3c6988; border-right: solid 1px #3c6988; border-top: solid 1px #3c6988}
+
+#Geral {
+	width: 990px;
+	height: 120px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	padding-top: 0px;
+	padding-right: 2px;
+	padding-bottom: 0px;
+	padding-left: 2px;
+	background-color:#4E738D;
+	background-image: url(../Images/crav_top.jpg);
+	background-position:center;
+	background-repeat: no-repeat;
+}
+
+#logo_ADP {
+	width:110px;
+	height:112px;
+	margin-top:5px;
+	margin-left:30px;
+	float:left;
+	background-color:Transparent;
+}
+
+#InstitutionName {
+	color:#4E738D;
+	margin-top:96px;
+	margin-right:12px;
+	float:right;
+	font-size:10pt;
+	font-weight:bold;
+}
+
+
+/*==================================================================================================*/
+/*===== TEMPLATE ===================================================================================*/
+/*==================================================================================================*/
+.tblMain {
+	background-color: #ffffff; border: solid 1px #3c6988;
+}
+.bgFooter {
+	BORDER-RIGHT: #345487 1px solid; BORDER-TOP: #345487 1px solid; FONT-SIZE: 9px; BACKGROUND: url(../Images/BBgFooter.png) repeat-x; BORDER-LEFT: #345487 1px solid; COLOR: #ffffff; BORDER-BOTTOM: #345487 1px solid; LETTER-SPACING: 2px; TEXT-ALIGN: right
+}
+
+.bgCenter {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: url(../Images/BBgBodyHeader.png) repeat-x; COLOR: #ffffff; HEIGHT: 33px
+}
+
+.bgCenterSpc {
+	BACKGROUND: url(../Images/BBgBodyHeader.png) repeat-x; WIDTH: 10px; HEIGHT: 33px
+}
+
+/*==================================================================================================*/
+/*===== DATAGDRIDS =================================================================================*/
+/*==================================================================================================*/
+.bgDgHeader {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: url(../Images/BBgDgHeader.png) repeat-x; 
+	COLOR: #ffffff; HEIGHT: 26px; text-align:center;
+}
+
+.bgHighDgHeader {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: url(../Images/BBgHighDgHeader.png) repeat-x; 
+	COLOR: #ffffff; HEIGHT: 39px; text-align:center;
+}
+
+.bgDgFooter {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: url(../Images/BBgDgFooter.png) repeat-x; 
+	COLOR: #ffffff; HEIGHT: 26px; text-align:center;
+}
+
+.bgSDgHeader {
+	FONT-SIZE: 12px; BACKGROUND: url(../Images/BBgSDgHeader.png) repeat-x; 
+	COLOR: #ffffff; HEIGHT: 24px; text-align:center;
+}
+
+.itemStyle_textLeft {
+	color:#666666; background-color:#eeeeee; text-align:left
+}
+
+.itemStyle_textRight {
+	color:#666666; background-color:#eeeeee; text-align:right
+}
+
+.itemStyle_textRightGreen {
+	color:#666666; background-color:#d7fea0; text-align:right
+}
+
+.itemStyle_textRightRed {
+	color:#666666; background-color:#f4c6c4; text-align:right
+}
+
+.itemStyle_textCenter {
+	color:#666666; background-color:#eeeeee; text-align:center
+}
+
+.selectedItemStyle{
+		color:#666666; background-color:#eeeeee; text-align:left; font-weight:bold;
+}
+
+.pagerStyle {
+	font-size:10pt; font-weight:bold; color:#ffffff; background-color:#cccccc; 
+	text-align:center; text-indent:4pt; font-variant:small-caps;
+}
+
+.txbDg {
+	color:#666666; width:100%;
+}
+
+.tablesSt{
+	color:#666666; background-color:#eeeeee; text-align:right; border-color:White;
+}
+
+
+/*==================================================================================================*/
+/*===== BUTTONS ====================================================================================*/
+/*==================================================================================================*/
+
+.Button_1 {
+	padding-bottom:2px; padding-top:2px; border: #666666 1px solid; padding-left:15px; 
+	padding-right:15px; FONT-WEIGHT: bold; FONT-SIZE: 9pt; CURSOR: hand; COLOR: #ffffff; 
+	FONT-FAMILY: arial, helvetica, verdana; WHITE-SPACE: nowrap; BACKGROUND-COLOR: #cccccc; 
+	TEXT-ALIGN: center; TEXT-DECORATION: none; margin-left:10px}
+.Button_1:hover {COLOR: #ffffff; BACKGROUND-COLOR: #666666;}
+
+.Button_1L {
+	padding-bottom:2px; padding-top:2px; border: #666666 1px solid; padding-left:15px; 
+	padding-right:15px;  FONT-WEIGHT: bold; FONT-SIZE: 9pt; CURSOR: hand; COLOR: #ffffff; 
+	FONT-FAMILY: arial, helvetica, verdana; WHITE-SPACE: nowrap; BACKGROUND-COLOR: #cccccc; 
+	TEXT-ALIGN: center; TEXT-DECORATION: none; margin-right:10px}
+.Button_1L:hover {COLOR: #ffffff; BACKGROUND-COLOR: #666666;}
+
+
+/*==================================================================================================*/
+/*===== GLOBAL =====================================================================================*/
+/*==================================================================================================*/
+.txt {color:#666666; font-variant:normal; font-size:8pt; }
+.txtB {color:#666666; font-weight:bold; }
+.txb {color:#666666; width:100%; border: solid 1px #3c6988;}
+.ddl {color:#666666; width:100%; }
+
+.headerSeccion {width:180px; height:20px; font-size:8.5pt; color:navy; font-weight:bold; }
+.star {width:20px; font-size:7.5pt; color:#666666; text-align:right; }
+.fieldsTitle {width:160px; font-size:7.5pt; color:#666666; }
+.bigTxb {width:230px; font-size:7.5pt; color:#666666; vertical-align:middle; border: solid 1px #3c6988;}
+.mediumTxb {width:150px; font-size:7.5pt; color:#666666; border: solid 1px #3c6988; }
+
+.line {
+	background-color:#666666; 
+	height: 1px;
+}
+
+.Invisible {
+	background-color:White;
+	border-width:0;
+	width:0;
+}
+
+.vertical_spacer1 {HEIGHT: 8px}
+.vertical_spacer2 {HEIGHT: 20px}
+.vertical_spacer3 {HEIGHT: 45px}
+.vertical_spacer4 {HEIGHT: 100px}
+
+.txbYear { color:#666666; width:40px; text-align:center; vertical-align:middle; border: solid 1px #3c6988; }
+.txbMonth { color:#666666; width:20px; text-align:center; vertical-align:middle; border: solid 1px #3c6988; }
+.txbDay { color:#666666; width:20px; text-align:center; vertical-align:middle; border: solid 1px #3c6988; }
+
+a.generalLink:link { 
+text-decoration:none;
+font-weight:bold; 
+color:#666666;
+} 
+
+a.generalLink:visited { 
+text-decoration:none;
+font-weight:bold; 
+color:#666666;
+} 
+
+a.generalLink:hover { 
+color:#4E738D; 
+font-weight:bold; 
+text-decoration:underline;
+} 
+
+
+/*===== login.ascx (01) ===========================================================================*/
+.txt01 {width:150px; FONT-WEIGHT: bold; FONT-SIZE: 12px; PADDING-BOTTOM: 1px; COLOR: #505050; FONT-FAMILY: arial, helvetica, verdana; TEXT-ALIGN: right}
+.txb01 {color:#666666; margin-left:15px; margin-right:15px; width:150px; border: solid 1px #3c6988;}
+.ddl01 {color:#666666; margin-left:15px; margin-right:15px; width:150px}
+.txtError01 {color:Red; font-size:7pt; margin-left:15px;}
+
+/*===== aplicationsMenu1.ascx ==================================================================*/
+.txbNewAplicationCode { color:#666666; width:100px; border: solid 1px #3c6988; }
+.txbNewAplication { color:#666666; width:200px; margin-left:5px; border: solid 1px #3c6988; }
+.txbNewVersion { color:#666666; width:100px; margin-left:5px; border: solid 1px #3c6988; }
+
+/* -=== aplicationsMenu2.ascx =================================================================*/
+.txbFunctionCode { color:#666666; width:100px; border: solid 1px #3c6988; }
+.txbFunctionName { color:#666666; width:200px; margin-left:5px; border: solid 1px #3c6988; }
+
+
+
+/* -=== FUNCTION TREE ===- */
+UL.ontology {
+	LIST-STYLE-TYPE: none; color:#666666; line-height:20px; margin-left:20px; 
+}
+
+UL.ontologyS {
+	LIST-STYLE-TYPE: none; display:block; color:#666666; 
+}
+
+UL.ontologySU {
+	LIST-STYLE-TYPE: none; display:none; color:#666666;
+}
+
+INPUT.PSFSelected {
+	margin:2px 2px 2px 2px;
+}
+
+INPUT.PSFUnselected {
+	margin:2px 2px 2px 2px;
+}
+
+
+IL.item {
+	LIST-STYLE-TYPE: none; color:#666666; padding-top:5px; background-color:Blue;
+}
+
+.selected {
+	LIST-STYLE-TYPE: none; color:red; font-weight:bold;
+}
+
+

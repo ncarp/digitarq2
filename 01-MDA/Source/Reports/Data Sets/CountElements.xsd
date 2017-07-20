@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="CountElements" targetNamespace="http://tempuri.org/CountElements.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/CountElements.xsd" xmlns:mstns="http://tempuri.org/CountElements.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="CountElements" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="CountElements">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="F" type="xs:int" minOccurs="0" />
+							<xs:element name="SF" type="xs:int" minOccurs="0" />
+							<xs:element name="SC" type="xs:int" minOccurs="0" />
+							<xs:element name="SSC" type="xs:int" minOccurs="0" />
+							<xs:element name="SSSC" type="xs:int" minOccurs="0" />
+							<xs:element name="SR" type="xs:int" minOccurs="0" />
+							<xs:element name="SSR" type="xs:int" minOccurs="0" />
+							<xs:element name="UI" type="xs:int" minOccurs="0" />
+							<xs:element name="DC" type="xs:int" minOccurs="0" />
+							<xs:element name="D" type="xs:int" minOccurs="0" />
+							<xs:element name="Total" type="xs:int" minOccurs="0" />
+							<xs:element name="CompleteUnitID" type="xs:string" minOccurs="0" />
+							<xs:element name="UnitTitle" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Logo">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+							<xs:element name="SmallLogo" type="xs:base64Binary" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

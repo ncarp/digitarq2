@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ExifExtractor", "ExifExtractor.vbproj", "{F70B1FD9-6D02-4AAD-B77B-34BDEAE59220}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{F70B1FD9-6D02-4AAD-B77B-34BDEAE59220}.Debug.ActiveCfg = Debug|.NET
+		{F70B1FD9-6D02-4AAD-B77B-34BDEAE59220}.Debug.Build.0 = Debug|.NET
+		{F70B1FD9-6D02-4AAD-B77B-34BDEAE59220}.Release.ActiveCfg = Release|.NET
+		{F70B1FD9-6D02-4AAD-B77B-34BDEAE59220}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

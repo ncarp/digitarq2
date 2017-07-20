@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="FondsGuideDataSet" targetNamespace="http://tempuri.org/Dataset1.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/Dataset1.xsd" xmlns:mstns="http://tempuri.org/Dataset1.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="CatalogDataSet" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Components">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="UnitId" type="xs:string" minOccurs="0" />
+							<xs:element name="OtherLevel" type="xs:string" minOccurs="0" />
+							<xs:element name="UnitTitle" type="xs:string" minOccurs="0" />
+							<xs:element name="UnitDateInitial" type="xs:string" minOccurs="0" />
+							<xs:element name="UnitDateFinal" type="xs:string" minOccurs="0" />
+							<xs:element name="Dimensions" type="xs:string" minOccurs="0" />
+							<xs:element name="ExtentMl" type="xs:string" minOccurs="0" />
+							<xs:element name="BiogHist" type="xs:string" minOccurs="0" />
+							<xs:element name="ScopeContent" type="xs:string" minOccurs="0" />
+							<xs:element name="AccessRestrict" type="xs:string" minOccurs="0" />
+							<xs:element name="PhysTech" type="xs:string" minOccurs="0" />
+							<xs:element name="RelatedMaterial" type="xs:string" minOccurs="0" />
+							<xs:element name="Bibliography" type="xs:string" minOccurs="0" />
+							<xs:element name="OtherLevelDescription" type="xs:string" minOccurs="0" />
+							<xs:element name="OriginationAuthor" type="xs:string" minOccurs="0" />
+							<xs:element name="OriginationAuthorAddress" type="xs:string" minOccurs="0" />
+							<xs:element name="UseRestrict" type="xs:string" minOccurs="0" />
+							<xs:element name="LangMaterial" type="xs:string" minOccurs="0" />
+							<xs:element name="PhysFacet" type="xs:string" minOccurs="0" />
+							<xs:element name="PhysLoc" type="xs:string" minOccurs="0" />
+							<xs:element name="AltFormAvail" type="xs:string" minOccurs="0" />
+							<xs:element name="OriginationNotary" type="xs:string" minOccurs="0" />
+							<xs:element name="OriginationScrivener" type="xs:string" minOccurs="0" />
+							<xs:element name="OriginationDestination" type="xs:string" minOccurs="0" />
+							<xs:element name="OriginationDestinationAddress" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Logo">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+							<xs:element name="SmallLogo" type="xs:base64Binary" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

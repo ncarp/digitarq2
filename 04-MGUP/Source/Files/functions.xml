@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<aplications>
+<aplication AplicationID="1" AplicationName="GPU">
+	<function FunctionID="1" FunctionName="Administração">
+		<function FunctionID="2" FunctionName="Gestão funcionários" Reference="defaultIn.aspx?page=employees&amp;functionID=2">
+			<function FunctionID="3" FunctionName="Novo" Reference="defaultIn.aspx?page=employees&amp;menu=employeesMenu2&amp;functionID=2" Control="employeesMenu2"/>
+			<function FunctionID="4" FunctionName="Listar" Reference="defaultIn.aspx?page=employees&amp;menu=employeesMenu1&amp;functionID=2" Control="employeesMenu1"/>
+		</function>
+		<function FunctionID="5" FunctionName="Gestão perfis" Reference="defaultIn.aspx?page=profiles&amp;functionID=20">
+			<function FunctionID="6" FunctionName="Novo" Reference="defaultIn.aspx?page=profilesamp;menu=profilesMenu2&amp;functionID=20" Control="profilesMenu2"></function>
+			<function FunctionID="7" FunctionName="Funcionalidades" Reference="defaultIn.aspx?page=profilesamp;menu=profilesMenu1&amp;functionID=20" Control="profilesMenu1"></function>
+	 	</function>
+	</function>
+</aplication>
+<aplication AplicationID="2" AplicationName="CRAV"/>
+<aplication AplicationID="3" AplicationName="Digitarq"/>
+<aplication AplicationID="4" AplicationName="GOD"/>
+</aplications>

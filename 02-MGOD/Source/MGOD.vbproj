@@ -1,0 +1,658 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{51EAA1C2-6B6D-4FC5-A617-1742FA2B9070}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <AssemblyKeyContainerName />
+    <AssemblyName>MGOD</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>MGOD</RootNamespace>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>MGOD.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>app.config</ConfigurationOverrideFile>
+    <DefineConstants />
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>MGOD.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>app.config</ConfigurationOverrideFile>
+    <DefineConstants />
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\03-MPOD\Source\MPOD.vbproj">
+      <Name>MPOD</Name>
+      <Project>{EF6B007E-4F1E-4A83-8FCD-600325CA2571}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\06-Authentication\Source\Authentication.vbproj">
+      <Name>Authentication</Name>
+      <Project>{3F213273-2733-4504-8791-6E2E46F009DA}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\08-UserControls\ErrorHandling\ErrorHandling.vbproj">
+      <Name>ErrorHandling</Name>
+      <Project>{C5EA3B5F-CC8D-414F-A9FE-60EF7788A877}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\08-UserControls\ExifExtractor\ExifExtractor.vbproj">
+      <Name>ExifExtractor</Name>
+      <Project>{F70B1FD9-6D02-4AAD-B77B-34BDEAE59220}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\08-UserControls\mkc_button\mkc_Button.vbproj">
+      <Name>mkc_Button</Name>
+      <Project>{3F8E642F-1B5F-45C2-A359-89EB4CF5A988}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\08-UserControls\PictureBox\PictureBoxCtrl.csproj">
+      <Name>PictureBoxCtrl</Name>
+      <Project>{A96B3B89-66ED-466C-8703-F44E86433097}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\04-MGUP\Source\MGUP.vbproj">
+      <Name>MGUP</Name>
+      <Project>{0D2BA23C-329A-4295-A2FA-EF819A023A3B}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <Reference Include="Accessibility">
+      <Name>Accessibility</Name>
+    </Reference>
+    <Reference Include="ADODB">
+      <Name>adodb</Name>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Microsoft.NET\Primary Interop Assemblies\adodb.dll</HintPath>
+      <AssemblyFolderKey>hklm\primary interop assemblies</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic">
+      <Name>Microsoft.VisualBasic</Name>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install">
+      <Name>System.Configuration.Install</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Management">
+      <Name>System.Management</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Code\AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\AutoFocus.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\CapabilityConstantsCollection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Constants.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\ControlAccess.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\ControlAccessItemCollection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\ControlAccessTypeCollection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Cryptography.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\CTree.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\DigitalizationProfile.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\DOFile.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Encrypt.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\General.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Item.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\ItemData.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\LampType.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Log.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\MessageBoxes.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\MeteringMode.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\MyImageProcessing.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\SqlCommands.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\TechnologicalPlatform.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\UserCollection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Users.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Validator.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Config\ColorButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Config\ColorGroupBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Config\ColorTexBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Config\DateTextBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Config\MaskedBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Config\ProgramState.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Config\RichTextBoxColor.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\AboutForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddImageForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddNodeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AutoFocusForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChooseProjectForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DigitalizationProfilesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DigitalObjectsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FilesRenameForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FindDOForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FindProjectForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HistoricalPreservationForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LampTypeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MeteringModesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProgressBarForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReformattingMethodsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReformattingNormsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReportPreviewForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RevisionIntervalForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TechnologicalPlataformForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GODInstaller.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Main.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Reports\Algorithms\ReportDataSetBuilder.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Reports\DataSets\DigitalizationProfilesData.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DigitalizationProfilesData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DataSets\DigitalObjectsData.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DigitalObjectsData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DataSets\DOImagesData.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DOImagesData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DataSets\DOOperatorsData.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DOOperatorsData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DataSets\DORevisionData.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DORevisionData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DataSets\PreservationInfoData.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PreservationInfoData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DataSets\PreservationNormsData.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PreservationNormsData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DataSets\ProjectsData.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectsData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DataSets\ReformattingMethodsData.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReformattingMethodsData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DataSets\ReformattingNormsData.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReformattingNormsData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DataSets\UIDigitalizationData.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UIDigitalizationData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Layouts\DigitalizationProfilesReport.vb">
+      <DependentUpon>DigitalizationProfilesReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\Layouts\DORevisionReport.vb">
+      <DependentUpon>DORevisionReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\Layouts\MIDigitalObjectsReport.vb">
+      <DependentUpon>MIDigitalObjectsReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\Layouts\MIDOFilesReport1.vb">
+      <DependentUpon>MIDOFilesReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\Layouts\OperatorsReport.vb">
+      <DependentUpon>OperatorsReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\Layouts\PreservationInformationReport.vb">
+      <DependentUpon>PreservationInformationReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\Layouts\ProjectsReport.vb">
+      <DependentUpon>ProjectsReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\Layouts\ReformattingMethodsReport.vb">
+      <DependentUpon>ReformattingMethodsReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\Layouts\ReformattingNormsReport.vb">
+      <DependentUpon>ReformattingNormsReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\Layouts\UIDigitalizationReport.vb">
+      <DependentUpon>UIDigitalizationReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Content Include="app.ico" />
+    <Content Include="Images\associate.png" />
+    <Content Include="Images\associations.png" />
+    <Content Include="Images\back.png" />
+    <Content Include="Images\deassociate.png" />
+    <Content Include="Images\large_preview.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\lvw.PNG" />
+    <Content Include="Images\m.PNG" />
+    <Content Include="Images\more_info.png" />
+    <Content Include="Images\p.PNG" />
+    <Content Include="Images\preview.png" />
+    <Content Include="Images\promo_find.jpg" />
+    <Content Include="Images\select.PNG" />
+    <Content Include="Images\tvw.png" />
+    <Content Include="Images\unselect.PNG" />
+    <Content Include="Reports\DataSets\DigitalizationProfilesData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DigitalizationProfilesData.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Reports\DataSets\DigitalObjectsData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DigitalObjectsData.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Reports\DataSets\DOImagesData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DOImagesData.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Reports\DataSets\DOOperatorsData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DOOperatorsData.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Reports\DataSets\DORevisionData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DORevisionData.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Reports\DataSets\PreservationInfoData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PreservationInfoData.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Reports\DataSets\PreservationNormsData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PreservationNormsData.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Reports\DataSets\ProjectsData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjectsData.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Reports\DataSets\ReformattingMethodsData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReformattingMethodsData.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Reports\DataSets\ReformattingNormsData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReformattingNormsData.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Reports\DataSets\UIDigitalizationData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UIDigitalizationData.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Resources\app.ico" />
+    <Content Include="Resources\banner.JPG" />
+    <Content Include="Resources\logo.png" />
+    <Content Include="Resources\smallLogo.png" />
+    <Content Include="Resources\splash.jpg" />
+    <Content Include="Resources\waterMark.png" />
+    <EmbeddedResource Include="Config\ColorButton.resx">
+      <DependentUpon>ColorButton.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Config\ColorGroupBox.resx">
+      <DependentUpon>ColorGroupBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AboutForm.resx">
+      <DependentUpon>AboutForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddImageForm.resx">
+      <DependentUpon>AddImageForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddNodeForm.resx">
+      <DependentUpon>AddNodeForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AutoFocusForm.resx">
+      <DependentUpon>AutoFocusForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChooseProjectForm.resx">
+      <DependentUpon>ChooseProjectForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DigitalizationProfilesForm.resx">
+      <DependentUpon>DigitalizationProfilesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DigitalObjectsForm.resx">
+      <DependentUpon>DigitalObjectsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FilesRenameForm.resx">
+      <DependentUpon>FilesRenameForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FindDOForm.resx">
+      <DependentUpon>FindDOForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FindProjectForm.resx">
+      <DependentUpon>FindProjectForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HistoricalPreservationForm.resx">
+      <DependentUpon>HistoricalPreservationForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LampTypeForm.resx">
+      <DependentUpon>LampTypeForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MeteringModesForm.resx">
+      <DependentUpon>MeteringModesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProgressBarForm.resx">
+      <DependentUpon>ProgressBarForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReformattingMethodsForm.resx">
+      <DependentUpon>ReformattingMethodsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReformattingNormsForm.resx">
+      <DependentUpon>ReformattingNormsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReportPreviewForm.resx">
+      <DependentUpon>ReportPreviewForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RevisionIntervalForm.resx">
+      <DependentUpon>RevisionIntervalForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TechnologicalPlataformForm.resx">
+      <DependentUpon>TechnologicalPlataformForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GODInstaller.resx">
+      <DependentUpon>GODInstaller.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Layouts\DigitalizationProfilesReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DigitalizationProfilesReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Layouts\DORevisionReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DORevisionReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Layouts\MIDigitalObjectsReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MIDigitalObjectsReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Layouts\MIDOFilesReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MIDOFilesReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Layouts\OperatorsReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>OperatorsReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Layouts\PreservationInformationReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PreservationInformationReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Layouts\ProjectsReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ProjectsReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Layouts\ReformattingMethodsReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReformattingMethodsReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Layouts\ReformattingNormsReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReformattingNormsReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Layouts\UIDigitalizationReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>UIDigitalizationReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="Reports\DataSets\DigitalizationProfilesData.xsx">
+      <DependentUpon>DigitalizationProfilesData.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\DataSets\DigitalObjectsData.xsx">
+      <DependentUpon>DigitalObjectsData.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\DataSets\DOImagesData.xsx">
+      <DependentUpon>DOImagesData.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\DataSets\DOOperatorsData.xsx">
+      <DependentUpon>DOOperatorsData.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\DataSets\DORevisionData.xsx">
+      <DependentUpon>DORevisionData.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\DataSets\PreservationInfoData.xsx">
+      <DependentUpon>PreservationInfoData.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\DataSets\PreservationNormsData.xsx">
+      <DependentUpon>PreservationNormsData.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\DataSets\ProjectsData.xsx">
+      <DependentUpon>ProjectsData.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\DataSets\ReformattingMethodsData.xsx">
+      <DependentUpon>ReformattingMethodsData.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\DataSets\ReformattingNormsData.xsx">
+      <DependentUpon>ReformattingNormsData.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\DataSets\UIDigitalizationData.xsx">
+      <DependentUpon>UIDigitalizationData.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\license.rtf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+    <Service Include="{CF845C55-C321-4742-B673-E6212D061ED9}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

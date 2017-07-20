@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="DOImagesData" targetNamespace="http://tempuri.org/DOImagesData.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/DOImagesData.xsd" xmlns:mstns="http://tempuri.org/DOImagesData.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="DOImagesData" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="DOFiles">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="FileID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:long" />
+							<xs:element name="DigitalObjectID" type="xs:long" />
+							<xs:element name="CreationDateTime" type="xs:string" minOccurs="0" />
+							<xs:element name="Name" type="xs:string" />
+							<xs:element name="TPlatformID" type="xs:int" minOccurs="0" />
+							<xs:element name="ColorSpace" type="xs:string" minOccurs="0" />
+							<xs:element name="LampTypeID" type="xs:int" minOccurs="0" />
+							<xs:element name="ImageWidth" type="xs:string" minOccurs="0" />
+							<xs:element name="ImageHeight" type="xs:string" minOccurs="0" />
+							<xs:element name="Resolution" type="xs:string" minOccurs="0" />
+							<xs:element name="BitDepth" type="xs:int" minOccurs="0" />
+							<xs:element name="Compression" type="xs:string" minOccurs="0" />
+							<xs:element name="MIMEType" type="xs:string" minOccurs="0" />
+							<xs:element name="ImageSize" type="xs:long" minOccurs="0" />
+							<xs:element name="DeviceSource" type="xs:string" minOccurs="0" />
+							<xs:element name="ScannerManufacturer" type="xs:string" minOccurs="0" />
+							<xs:element name="ScannerModelName" type="xs:string" minOccurs="0" />
+							<xs:element name="ScanningSoftware" type="xs:string" minOccurs="0" />
+							<xs:element name="ScanningSoftwareVersionNo" type="xs:string" minOccurs="0" />
+							<xs:element name="OperatingSystem" type="xs:string" minOccurs="0" />
+							<xs:element name="OperatingSystemVersion" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="DaoGrp">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ComponentID" type="xs:long" />
+							<xs:element name="DigitalObjectID" type="xs:long" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="DigitalObjects">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="DigitalObjectID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:long" />
+							<xs:element name="DOName" type="xs:string" />
+							<xs:element name="ArchiveID" type="xs:string" />
+							<xs:element name="ArchiveDateTime" type="xs:string" />
+							<xs:element name="QuantityOfTerminalObjects" type="xs:int" minOccurs="0" />
+							<xs:element name="TopographicalQuota" type="xs:string" minOccurs="0" />
+							<xs:element name="UserName" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Components">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:long" />
+							<xs:element name="OtherLevel" type="xs:string" />
+							<xs:element name="CompleteUnitId" type="xs:string" minOccurs="0" />
+							<xs:element name="UnitTitle" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Logo">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="DOImagesDataKey1">
+			<xs:selector xpath=".//mstns:DOFiles" />
+			<xs:field xpath="mstns:FileID" />
+		</xs:unique>
+		<xs:key name="DOImagesDataKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:DOFiles" />
+			<xs:field xpath="mstns:FileID" />
+		</xs:key>
+		<xs:unique name="DOImagesDataKey3" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:DaoGrp" />
+			<xs:field xpath="mstns:ComponentID" />
+			<xs:field xpath="mstns:DigitalObjectID" />
+		</xs:unique>
+		<xs:unique name="DOImagesDataKey4" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:DigitalObjects" />
+			<xs:field xpath="mstns:DigitalObjectID" />
+		</xs:unique>
+		<xs:unique name="DOImagesDataKey5" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Components" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+		<xs:keyref name="DigitalObjectsDOFiles" refer="DOImagesDataKey4">
+			<xs:selector xpath=".//mstns:DOFiles" />
+			<xs:field xpath="mstns:DigitalObjectID" />
+		</xs:keyref>
+		<xs:keyref name="DigitalObjectsDaoGrp" refer="DOImagesDataKey4">
+			<xs:selector xpath=".//mstns:DaoGrp" />
+			<xs:field xpath="mstns:DigitalObjectID" />
+		</xs:keyref>
+		<xs:keyref name="ComponentsDaoGrp" refer="DOImagesDataKey5">
+			<xs:selector xpath=".//mstns:DaoGrp" />
+			<xs:field xpath="mstns:ComponentID" />
+		</xs:keyref>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "mkc_Button", "mkc_Button.vbproj", "{3F8E642F-1B5F-45C2-A359-89EB4CF5A988}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Tester", "Tester\Tester.vbproj", "{EF20BA18-2DA8-4D64-BB4B-F4AD2C393708}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{3F8E642F-1B5F-45C2-A359-89EB4CF5A988}.Debug.ActiveCfg = Release|.NET
+		{3F8E642F-1B5F-45C2-A359-89EB4CF5A988}.Debug.Build.0 = Release|.NET
+		{3F8E642F-1B5F-45C2-A359-89EB4CF5A988}.Release.ActiveCfg = Release|.NET
+		{3F8E642F-1B5F-45C2-A359-89EB4CF5A988}.Release.Build.0 = Release|.NET
+		{EF20BA18-2DA8-4D64-BB4B-F4AD2C393708}.Debug.ActiveCfg = Debug|.NET
+		{EF20BA18-2DA8-4D64-BB4B-F4AD2C393708}.Debug.Build.0 = Debug|.NET
+		{EF20BA18-2DA8-4D64-BB4B-F4AD2C393708}.Release.ActiveCfg = Release|.NET
+		{EF20BA18-2DA8-4D64-BB4B-F4AD2C393708}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

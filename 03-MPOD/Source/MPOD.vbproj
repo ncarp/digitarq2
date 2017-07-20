@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EF6B007E-4F1E-4A83-8FCD-600325CA2571}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <AssemblyKeyContainerName />
+    <AssemblyName>MPOD</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>MPOD</RootNamespace>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>MPOD.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>MPOD.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\06-Authentication\Source\Authentication.vbproj">
+      <Name>Authentication</Name>
+      <Project>{3F213273-2733-4504-8791-6E2E46F009DA}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\08-UserControls\ErrorHandling\ErrorHandling.vbproj">
+      <Name>ErrorHandling</Name>
+      <Project>{C5EA3B5F-CC8D-414F-A9FE-60EF7788A877}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\08-UserControls\mkc_button\mkc_Button.vbproj">
+      <Name>mkc_Button</Name>
+      <Project>{3F8E642F-1B5F-45C2-A359-89EB4CF5A988}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\08-UserControls\PictureBox\PictureBoxCtrl.csproj">
+      <Name>PictureBoxCtrl</Name>
+      <Project>{A96B3B89-66ED-466C-8703-F44E86433097}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\04-MGUP\Source\MGUP.vbproj">
+      <Name>MGUP</Name>
+      <Project>{0D2BA23C-329A-4295-A2FA-EF819A023A3B}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic">
+      <Name>Microsoft.VisualBasic</Name>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install">
+      <Name>System.Configuration.Install</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Code\Constants.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\CTreeView.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\DataBase.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\DOTreeView.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\General.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Log.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\MessageBoxes.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\TreeNodeInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\AssocComponentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AssocDOForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AssociationForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChooseProjectForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DOStructureForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReportPreviewForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PODInstaller.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Algorithms\ReportDataSetBuilder.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Reports\Datasets\DigitarqODData.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DigitarqODData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Datasets\UIDigitalizationData.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UIDigitalizationData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Layouts\DigitarqDOReport.vb">
+      <DependentUpon>DigitarqDOReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\Layouts\UIDigitalizationReport1.vb">
+      <DependentUpon>UIDigitalizationReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Content Include="app.ico" />
+    <Content Include="Images\associate.png" />
+    <Content Include="Images\associations.png" />
+    <Content Include="Images\back.png" />
+    <Content Include="Images\deassociate.png" />
+    <Content Include="Images\large_preview.png" />
+    <Content Include="Images\lvw.PNG" />
+    <Content Include="Images\m.PNG" />
+    <Content Include="Images\more_info.png" />
+    <Content Include="Images\p.PNG" />
+    <Content Include="Images\preview.png" />
+    <Content Include="Images\select.PNG" />
+    <Content Include="Images\tvw.png" />
+    <Content Include="Images\unselect.PNG" />
+    <Content Include="Reports\Datasets\DigitarqODData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DigitarqODData.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Reports\Datasets\UIDigitalizationData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UIDigitalizationData.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Resources\app.ico" />
+    <Content Include="Resources\banner.JPG" />
+    <Content Include="Resources\logo.png" />
+    <Content Include="Resources\smallLogo.png" />
+    <Content Include="Resources\splash.jpg" />
+    <EmbeddedResource Include="Forms\AssocComponentForm.resx">
+      <DependentUpon>AssocComponentForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AssocDOForm.resx">
+      <DependentUpon>AssocDOForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AssociationForm.resx">
+      <DependentUpon>AssociationForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChooseProjectForm.resx">
+      <DependentUpon>ChooseProjectForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DOStructureForm.resx">
+      <DependentUpon>DOStructureForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReportPreviewForm.resx">
+      <DependentUpon>ReportPreviewForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PODInstaller.resx">
+      <DependentUpon>PODInstaller.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Layouts\DigitarqDOReport.resx">
+      <DependentUpon>DigitarqDOReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Layouts\DigitarqDOReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DigitarqDOReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Layouts\UIDigitalizationReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>UIDigitalizationReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="Reports\Datasets\DigitarqODData.xsx">
+      <DependentUpon>DigitarqODData.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Datasets\UIDigitalizationData.xsx">
+      <DependentUpon>UIDigitalizationData.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\license.rtf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+    <Service Include="{CF845C55-C321-4742-B673-E6212D061ED9}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="PreservationInfoData" targetNamespace="http://tempuri.org/PreservationInfoData.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/PreservationInfoData.xsd"
+	xmlns:mstns="http://tempuri.org/PreservationInfoData.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="PreservationInfoData" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="PreservationNorms">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PreservationActionID" type="xs:int" />
+							<xs:element name="ReformattingNormID" type="xs:int" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ReformattingNorms">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ReformattingNormID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="ReformattingNorm" type="xs:string" />
+							<xs:element name="Description" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="PreservationAction">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PreservationActionID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="ArchiveNextDateTime" type="xs:string" minOccurs="0" />
+							<xs:element name="RevisionDateTime" type="xs:string" minOccurs="0" />
+							<xs:element name="Transformer" type="xs:string" minOccurs="0" />
+							<xs:element name="Platform" type="xs:string" minOccurs="0" />
+							<xs:element name="RenderEngine" type="xs:string" minOccurs="0" />
+							<xs:element name="InputFormat" type="xs:string" minOccurs="0" />
+							<xs:element name="Parameters" type="xs:string" minOccurs="0" />
+							<xs:element name="ReformattingMethod" type="xs:string" minOccurs="0" />
+							<xs:element name="DigitalObjectID" type="xs:long" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="DigitalObjects">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="DigitalObjectID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:long" />
+							<xs:element name="Name" type="xs:string" />
+							<xs:element name="ArchiveID" type="xs:string" />
+							<xs:element name="ArchiveDateTime" type="xs:string" />
+							<xs:element name="TopographicalQuota" type="xs:string" minOccurs="0" />
+							<xs:element name="UserName" type="xs:string" minOccurs="0" />
+							<xs:element name="QuantityOfTerminalObjects" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Logo">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="PreservationInfoDataKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:PreservationNorms" />
+			<xs:field xpath="mstns:PreservationActionID" />
+			<xs:field xpath="mstns:ReformattingNormID" />
+		</xs:unique>
+		<xs:unique name="PreservationInfoDataKey3" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:ReformattingNorms" />
+			<xs:field xpath="mstns:ReformattingNormID" />
+		</xs:unique>
+		<xs:keyref name="ReformattingNormsPreservationNorms" refer="PreservationInfoDataKey3">
+			<xs:selector xpath=".//mstns:PreservationNorms" />
+			<xs:field xpath="mstns:ReformattingNormID" />
+		</xs:keyref>
+		<xs:unique name="PreservationInfoDataKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:PreservationAction" />
+			<xs:field xpath="mstns:PreservationActionID" />
+		</xs:unique>
+		<xs:keyref name="PreservationActionPreservationNorms" refer="PreservationInfoDataKey1">
+			<xs:selector xpath=".//mstns:PreservationNorms" />
+			<xs:field xpath="mstns:PreservationActionID" />
+		</xs:keyref>
+		<xs:unique name="PreservationInfoDataKey4" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:DigitalObjects" />
+			<xs:field xpath="mstns:DigitalObjectID" />
+		</xs:unique>
+		<xs:keyref name="DigitalObjectsPreservationAction" refer="PreservationInfoDataKey4">
+			<xs:selector xpath=".//mstns:PreservationAction" />
+			<xs:field xpath="mstns:DigitalObjectID" />
+		</xs:keyref>
+	</xs:element>
+</xs:schema>
