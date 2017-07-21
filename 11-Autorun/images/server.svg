@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg2"
+   width="500"
+   height="567"
+   viewBox="0 0 500 567"
+   sodipodi:docname="server.svg"
+   inkscape:version="0.92.0 r15299">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview4"
+     showgrid="false"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="24.709181"
+     inkscape:cy="164.58083"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g4804" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Background"
+     style="display:inline">
+    <image
+       sodipodi:absref="E:\01-digitarq\11-Autorun\images\clean-background.bmp"
+       xlink:href="clean-background.bmp"
+       width="500"
+       height="567"
+       preserveAspectRatio="none"
+       id="image10"
+       x="0"
+       y="0" />
+  </g>
+  <g
+     style="display:inline"
+     inkscape:label="Version client-server"
+     id="g4673"
+     inkscape:groupmode="layer">
+    <text
+       id="text4655"
+       y="114.0493"
+       x="318.73685"
+       style="font-style:normal;font-weight:normal;font-size:12.73333359px;line-height:25px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.73333359px;font-family:Arial;-inkscape-font-specification:'Arial Bold'"
+         y="114.0493"
+         x="318.73685"
+         id="tspan4653"
+         sodipodi:role="line">versão cliente-servidor</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Text"
+     style="display:inline">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:19.13333321px;line-height:25px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="33.615688"
+       y="164.26979"
+       id="text4508"><tspan
+         sodipodi:role="line"
+         id="tspan4506"
+         x="33.615688"
+         y="164.26979"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.13333321px;font-family:Arial;-inkscape-font-specification:'Arial Bold'">Instalação de aplicações servidor</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:17.06666756px;line-height:25px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="34.74931"
+       y="212.841"
+       id="text4508-4"><tspan
+         sodipodi:role="line"
+         id="tspan4506-0"
+         x="34.74931"
+         y="212.841"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17px;font-family:Arial;-inkscape-font-specification:'Arial Bold'">1. Pré-requisitos</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:17px;line-height:25px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="34.858326"
+       y="370.07208"
+       id="text4508-4-1"><tspan
+         sodipodi:role="line"
+         id="tspan4506-0-0"
+         x="34.858326"
+         y="370.07208"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17px;font-family:Arial;-inkscape-font-specification:'Arial Bold'">2. Base de dados</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:17.06666756px;line-height:25px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+       x="34.663498"
+       y="184.95084"
+       id="text4508-4-9"><tspan
+         sodipodi:role="line"
+         id="tspan4506-0-8"
+         x="34.663498"
+         y="184.95084"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.9333334px;font-family:Arial;-inkscape-font-specification:Arial">Por favor, instale as seguintes aplicações pela ordem indicada:</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.42666626px;line-height:25px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ca6666;fill-opacity:1;stroke:none"
+       x="268.91635"
+       y="555.10114"
+       id="text4508-4-9-3"><tspan
+         sodipodi:role="line"
+         id="tspan4506-0-8-6"
+         x="268.91635"
+         y="555.10114"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.42666626px;font-family:Arial;-inkscape-font-specification:Arial;fill:#ca6666;fill-opacity:1">Reinicie o computador após a instalação</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:17px;line-height:25px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+       x="34.744751"
+       y="471.22247"
+       id="text4508-4-1-4"><tspan
+         sodipodi:role="line"
+         id="tspan4506-0-0-9"
+         x="34.744751"
+         y="471.22247"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17px;font-family:Arial;-inkscape-font-specification:'Arial Bold'">3. Plataforma DigitArq</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Features-Off"
+     style="display:none">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:17px;line-height:26px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ca6666;fill-opacity:1;stroke:none"
+       x="57.786121"
+       y="238.24371"
+       id="text4508-4-9-9"><tspan
+         sodipodi:role="line"
+         id="tspan4506-0-8-3"
+         x="57.786121"
+         y="238.24371"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17px;line-height:25px;font-family:Arial;-inkscape-font-specification:Arial;fill:#ca6666;fill-opacity:1">1.1 Microsoft .NET Framework versão 1.0</tspan><tspan
+         sodipodi:role="line"
+         x="57.786121"
+         y="264.24371"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17px;line-height:25px;font-family:Arial;-inkscape-font-specification:Arial;fill:#ca6666;fill-opacity:1"
+         id="tspan4645">1.2 Microsoft .NET Framework versão 2.0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:17.06666756px;line-height:25px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ca6666;fill-opacity:1;stroke:none"
+       x="59.755859"
+       y="394.9794"
+       id="text4508-4-9-9-7"><tspan
+         sodipodi:role="line"
+         id="tspan4506-0-8-3-7"
+         x="59.755859"
+         y="394.9794"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17px;font-family:Arial;-inkscape-font-specification:Arial;fill:#ca6666;fill-opacity:1">2.1 Parametrizar Microsoft SQL Server 2000</tspan><tspan
+         sodipodi:role="line"
+         x="59.755859"
+         y="420.23389"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17px;font-family:Arial;-inkscape-font-specification:Arial;fill:#ca6666;fill-opacity:1"
+         id="tspan4571">2.2 Parametrizar Microsoft SQL Server 2005</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:17.06666756px;line-height:25px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ca6666;fill-opacity:1;stroke:none"
+       x="58.61676"
+       y="495.86978"
+       id="text4508-4-9-9-7-0"><tspan
+         sodipodi:role="line"
+         id="tspan4506-0-8-3-7-6"
+         x="58.61676"
+         y="495.86978"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17px;font-family:Arial;-inkscape-font-specification:Arial;fill:#ca6666;fill-opacity:1">3.1 Módulo de Disseminação, Navegação e Pesquisa</tspan><tspan
+         sodipodi:role="line"
+         x="58.61676"
+         y="521.12427"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17px;font-family:Arial;-inkscape-font-specification:Arial;fill:#ca6666;fill-opacity:1"
+         id="tspan4651-5">3.2 Módulo de Gestão de Utilizadores e Produtividade</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:11.73333359px;line-height:116.99999571%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ca6666;fill-opacity:1;stroke:none"
+       x="89.638512"
+       y="435.88681"
+       id="text4508-4-9-3-3"><tspan
+         sodipodi:role="line"
+         x="89.638512"
+         y="435.88681"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.73333359px;line-height:116.99999571%;font-family:Arial;-inkscape-font-specification:Arial;fill:#ca6666;fill-opacity:1"
+         id="tspan4633"><tspan
+   dy="0"
+   id="tspan4595"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.73333359px;line-height:116.99999571%;font-family:Arial;-inkscape-font-specification:Arial;fill:#ca6666;fill-opacity:1">(seleccione apenas uma das opções precedentes tendo em conta</tspan></tspan><tspan
+         sodipodi:role="line"
+         x="89.638512"
+         y="449.8024"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.73333359px;line-height:116.99999571%;font-family:Arial;-inkscape-font-specification:Arial;fill:#ca6666;fill-opacity:1"
+         id="tspan4639"> a versão do Microsoft SQL Server instalada no ponto 1.4)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:17px;line-height:16.20000076px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ca6666;fill-opacity:1;stroke:none"
+       x="57.83651"
+       y="287.49481"
+       id="text4508-4-9-9-9"><tspan
+         sodipodi:role="line"
+         x="57.83651"
+         y="287.49481"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17px;line-height:16.20000076px;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;fill:#000000;fill-opacity:1"
+         id="tspan4645-4">1.3 Internet Information Services(IIS)</tspan><tspan
+         sodipodi:role="line"
+         x="57.83651"
+         y="303.69482"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.86666679px;line-height:16.20000076px;font-family:Arial;-inkscape-font-specification:Arial;fill:#ca6666;fill-opacity:1"
+         id="tspan4682"><tspan
+   id="tspan4721"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.86666679px;line-height:16.20000076px;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;fill:#000000;fill-opacity:1">         </tspan>(não incluído nesta distribuição)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:17px;line-height:16.20000076px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ca6666;fill-opacity:1;stroke:none"
+       x="57.526985"
+       y="328.72656"
+       id="text4508-4-9-9-9-9"><tspan
+         sodipodi:role="line"
+         x="57.526985"
+         y="328.72656"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.86666679px;line-height:16.20000076px;font-family:Arial;-inkscape-font-specification:Arial;fill:#ca6666;fill-opacity:1"
+         id="tspan4682-4"><tspan
+   id="tspan4747"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17px;line-height:16.20000076px;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;fill:#000000;fill-opacity:1">1.4 Microsoft SQL Server 2000 ou 2005</tspan></tspan><tspan
+         sodipodi:role="line"
+         x="57.526985"
+         y="344.92657"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.86666679px;line-height:16.20000076px;font-family:Arial;-inkscape-font-specification:Arial;fill:#ca6666;fill-opacity:1"
+         id="tspan4749">         (não incluído nesta distribuição)</tspan></text>
+  </g>
+  <g
+     style="display:inline"
+     inkscape:label="Features-On"
+     id="g4804"
+     inkscape:groupmode="layer">
+    <text
+       id="text4766"
+       y="238.24371"
+       x="57.786121"
+       style="font-style:normal;font-weight:normal;font-size:17px;line-height:26px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#00009f;fill-opacity:1;stroke:none;"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17px;line-height:25px;font-family:Arial;-inkscape-font-specification:Arial;fill:#00009f;fill-opacity:1;"
+         y="238.24371"
+         x="57.786121"
+         id="tspan4762"
+         sodipodi:role="line">1.1 Microsoft .NET Framework versão 1.0</tspan><tspan
+         id="tspan4764"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17px;line-height:25px;font-family:Arial;-inkscape-font-specification:Arial;fill:#00009f;fill-opacity:1;"
+         y="264.24371"
+         x="57.786121"
+         sodipodi:role="line">1.2 Microsoft .NET Framework versão 2.0</tspan></text>
+    <text
+       id="text4772"
+       y="394.9794"
+       x="59.755859"
+       style="font-style:normal;font-weight:normal;font-size:17.06666756px;line-height:25px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#00009f;fill-opacity:1;stroke:none;"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17px;font-family:Arial;-inkscape-font-specification:Arial;fill:#00009f;fill-opacity:1;"
+         y="394.9794"
+         x="59.755859"
+         id="tspan4768"
+         sodipodi:role="line">2.1 Parametrizar Microsoft SQL Server 2000</tspan><tspan
+         id="tspan4770"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17px;font-family:Arial;-inkscape-font-specification:Arial;fill:#00009f;fill-opacity:1;"
+         y="420.23389"
+         x="59.755859"
+         sodipodi:role="line">2.2 Parametrizar Microsoft SQL Server 2005</tspan></text>
+    <text
+       id="text4778"
+       y="495.86978"
+       x="58.61676"
+       style="font-style:normal;font-weight:normal;font-size:17.06666756px;line-height:25px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#00009f;fill-opacity:1;stroke:none;"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17px;font-family:Arial;-inkscape-font-specification:Arial;fill:#00009f;fill-opacity:1;"
+         y="495.86978"
+         x="58.61676"
+         id="tspan4774"
+         sodipodi:role="line">3.1 Módulo de Disseminação, Navegação e Pesquisa</tspan><tspan
+         id="tspan4776"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17px;font-family:Arial;-inkscape-font-specification:Arial;fill:#00009f;fill-opacity:1;"
+         y="521.12427"
+         x="58.61676"
+         sodipodi:role="line">3.2 Módulo de Gestão de Utilizadores e Produtividade</tspan></text>
+    <text
+       id="text4786"
+       y="435.88681"
+       x="89.638512"
+       style="font-style:normal;font-weight:normal;font-size:11.73333359px;line-height:116.99999571%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ca6666;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         id="tspan4782"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.73333359px;line-height:116.99999571%;font-family:Arial;-inkscape-font-specification:Arial;fill:#ca6666;fill-opacity:1"
+         y="435.88681"
+         x="89.638512"
+         sodipodi:role="line"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.73333359px;line-height:116.99999571%;font-family:Arial;-inkscape-font-specification:Arial;fill:#ca6666;fill-opacity:1"
+   id="tspan4780"
+   dy="0">(seleccione apenas uma das opções precedentes tendo em conta</tspan></tspan><tspan
+         id="tspan4784"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.73333359px;line-height:116.99999571%;font-family:Arial;-inkscape-font-specification:Arial;fill:#ca6666;fill-opacity:1"
+         y="449.8024"
+         x="89.638512"
+         sodipodi:role="line"> a versão do Microsoft SQL Server instalada no ponto 1.4)</tspan></text>
+    <text
+       id="text4794"
+       y="287.49481"
+       x="57.83651"
+       style="font-style:normal;font-weight:normal;font-size:17px;line-height:16.20000076px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ca6666;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         id="tspan4788"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17px;line-height:16.20000076px;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;fill:#000000;fill-opacity:1"
+         y="287.49481"
+         x="57.83651"
+         sodipodi:role="line">1.3 Internet Information Services(IIS)</tspan><tspan
+         id="tspan4792"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.86666679px;line-height:16.20000076px;font-family:Arial;-inkscape-font-specification:Arial;fill:#ca6666;fill-opacity:1"
+         y="303.69482"
+         x="57.83651"
+         sodipodi:role="line"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.86666679px;line-height:16.20000076px;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;fill:#000000;fill-opacity:1"
+   id="tspan4790">         </tspan>(não incluído nesta distribuição)</tspan></text>
+    <text
+       id="text4802"
+       y="328.72656"
+       x="57.526985"
+       style="font-style:normal;font-weight:normal;font-size:17px;line-height:16.20000076px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ca6666;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         id="tspan4798"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.86666679px;line-height:16.20000076px;font-family:Arial;-inkscape-font-specification:Arial;fill:#ca6666;fill-opacity:1"
+         y="328.72656"
+         x="57.526985"
+         sodipodi:role="line"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17px;line-height:16.20000076px;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;fill:#000000;fill-opacity:1"
+   id="tspan4796">1.4 Microsoft SQL Server 2000 ou 2005</tspan></tspan><tspan
+         id="tspan4800"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.86666679px;line-height:16.20000076px;font-family:Arial;-inkscape-font-specification:Arial;fill:#ca6666;fill-opacity:1"
+         y="344.92657"
+         x="57.526985"
+         sodipodi:role="line">         (não incluído nesta distribuição)</tspan></text>
+  </g>
+</svg>
